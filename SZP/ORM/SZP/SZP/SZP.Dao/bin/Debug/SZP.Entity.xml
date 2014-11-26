@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SZP.Entity</name>
+    </assembly>
+    <members>
+        <member name="P:SZP.Entity.SysOrganizational.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.Name">
+            <summary>
+            Name组织结构名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.EnglishName">
+            <summary>
+            EnglishName英文名字
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.Adddrss">
+            <summary>
+            Adddrss位置
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.Phone">
+            <summary>
+            Phone电话
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.Fax">
+            <summary>
+            Fax传真
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.Remark">
+            <summary>
+            Remark备注
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.CreatedBy">
+            <summary>
+            CreatedBy创建人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.CreatedTime">
+            <summary>
+            CreatedTime创建时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.LastupdateBy">
+            <summary>
+            LastupdateBy最后修改名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOrganizational.LastupdateTime">
+            <summary>
+            LastupdateTime最后修改人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroupMenu.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroupMenu.GroupId">
+            <summary>
+            GroupId用户编号
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroupMenu.MenuId">
+            <summary>
+            MenuId菜单Id
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroupMenu.OperationIds">
+            <summary>
+            OperationIds菜单行为ID是 用,隔开
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.Name">
+            <summary>
+            Name部门名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.EnglishName">
+            <summary>
+            EnglishName英文名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.OrganizationalId">
+            <summary>
+            OrganizationalId组织结构编号
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.ParentId">
+            <summary>
+            ParentId上级部门
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.Adddrss">
+            <summary>
+            Adddrss地址
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.Phone">
+            <summary>
+            Phone电话
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.Fax">
+            <summary>
+            Fax传真
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.Remark">
+            <summary>
+            Remark备注
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.CreatedBy">
+            <summary>
+            CreatedBy创建人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.CreatedTime">
+            <summary>
+            CreatedTime创建时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.LastupdateBy">
+            <summary>
+            LastupdateBy最后修改名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysDepartment.LastupdateTime">
+            <summary>
+            LastupdateTime最后修改人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.Name">
+            <summary>
+            Name角色名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.EnglishName">
+            <summary>
+            EnglishName英文名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.OrganizationalId">
+            <summary>
+            OrganizationalId所属组织结构
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.Remark">
+            <summary>
+            Remark描述
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.IsEnable">
+            <summary>
+            IsEnable是否启用  0启用     1不启用
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.IsDeleted">
+            <summary>
+            IsDeleted是否删除   0 否    1是
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.CreatedBy">
+            <summary>
+            CreatedBy创建人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.CreatedTime">
+            <summary>
+            CreatedTime创建时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.LastupdateBy">
+            <summary>
+            LastupdateBy最后修改人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysGroup.LastupdateTime">
+            <summary>
+            LastupdateTime修改时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.Children">
+            <summary>
+            下级菜单
+            </summary>        
+        </member>
+        <member name="P:SZP.Entity.SysMenu.Parent">
+            <summary>
+            上级菜单
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.ParentId">
+            <summary>
+            ParentId上级菜单名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.Title">
+            <summary>
+            Title菜单名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.EnglishTitle">
+            <summary>
+            EnglishTitle英文名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.PinYingName">
+            <summary>
+            PinYingName拼音
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.PageUrl">
+            <summary>
+            PageUrl菜单路劲
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.LocationType">
+            <summary>
+            LocationType跳转方式   枚举 1-blank  2-parent  3-search   4-self   5-Top
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.Depth">
+            <summary>
+            Depth当前级别
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.IconUrl">
+            <summary>
+            IconUrl图标路径
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.ImageUrl">
+            <summary>
+            ImageUrl图片路径
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.Ordinal">
+            <summary>
+            Ordinal
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.FullName">
+            <summary>
+            FullName全路径
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.IsEnable">
+            <summary>
+            IsEnable是否启用    0 启用 1不启用
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.IsDeleted">
+            <summary>
+            IsDeleted是否删除    0 是  1不是
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.CraetedBy">
+            <summary>
+            CraetedBy创建人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.CreatedTime">
+            <summary>
+            CreatedTime
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.LastupdateBy">
+            <summary>
+            LastupdateBy最后修改人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysMenu.LastupdateTime">
+            <summary>
+            LastupdateTime最后修改时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysLog.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysLog.EventId">
+            <summary>
+            EventId
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysLog.EventName">
+            <summary>
+            EventName
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysLog.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysLog.CreateAt">
+            <summary>
+            CreateAt
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysLog.IP">
+            <summary>
+            IP
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysLog.UserName">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysLog.OrganizationalId">
+            <summary>
+            OrganizationalId
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOperation.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOperation.MenuID">
+            <summary>
+            MenuID菜单Id
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOperation.Title">
+            <summary>
+            Title名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOperation.EnglishTitle">
+            <summary>
+            EnglishTitle英文名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOperation.ControlId">
+            <summary>
+            ControlId控件Id
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOperation.IconUrl">
+            <summary>
+            IconUrl控件图标
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOperation.Ordinal">
+            <summary>
+            Ordinal排序
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysOperation.IsEnable">
+            <summary>
+            IsEnable是否启用  0启用     1不启用
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUserMenu.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUserMenu.UserId">
+            <summary>
+            UserId用户Id
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUserMenu.OrganizationalId">
+            <summary>
+            OrganizationalId组织结构编号
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUserMenu.MenuId">
+            <summary>
+            MenuId菜单Id
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUserMenu.OperationIds">
+            <summary>
+            OperationIds菜单行为ID是 用,隔开
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.Name">
+            <summary>
+            Name职位名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.EnglishName">
+            <summary>
+            EnglishName英文名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.DepartmentId">
+            <summary>
+            DepartmentId所属部门
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.Remark">
+            <summary>
+            Remark备注
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.CreatedBy">
+            <summary>
+            CreatedBy创建人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.CreatedTime">
+            <summary>
+            CreatedTime创建时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.LastupdateBy">
+            <summary>
+            LastupdateBy最后修改名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysPosition.LastupdateTime">
+            <summary>
+            LastupdateTime最后修改人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Number">
+            <summary>
+            Number员工编号
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.JobNumber">
+            <summary>
+            JobNumber自定义员工编号
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Name">
+            <summary>
+            Name员工姓名
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Sex">
+            <summary>
+            Sex员工性别  1男   2女  3其他
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Birth">
+            <summary>
+            Birth员工出生日期
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Telephone">
+            <summary>
+            Telephone联系电话
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.DepartmentId">
+            <summary>
+            DepartmentId归属部门
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.EntryTime">
+            <summary>
+            EntryTime离职时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.QuitTime">
+            <summary>
+            QuitTime
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.PositionId">
+            <summary>
+            PositionId工作职位
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.WorkPart">
+            <summary>
+            WorkPart工作类别
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.SchoolRecord">
+            <summary>
+            SchoolRecord学位   枚举  1高中    2大专   3本科   4博士
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.WorkPlaceWant">
+            <summary>
+            WorkPlaceWant工作地点意向
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.WorkRank">
+            <summary>
+            WorkRank技能评估
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.WorkCompetence">
+            <summary>
+            WorkCompetence工作能力
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.CurrentProjectId">
+            <summary>
+            CurrentProjectId现在所在项目
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.WorkExperience">
+            <summary>
+            WorkExperience工作经验
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Address">
+            <summary>
+            Address居住地址
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Census">
+            <summary>
+            Census籍贯
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.NativePlace">
+            <summary>
+            NativePlace户口所在地
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Nation">
+            <summary>
+            Nation民族
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Individualphone">
+            <summary>
+            Individualphone个人联系电话
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Email">
+            <summary>
+            Emailmail
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.IndirectContacts">
+            <summary>
+            IndirectContacts间接联系人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.IndirectContactsPhone">
+            <summary>
+            IndirectContactsPhone间接联系人电话
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Idcard">
+            <summary>
+            Idcard身份证号
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Postalcode">
+            <summary>
+            Postalcode
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Finishschool">
+            <summary>
+            Finishschool户口邮政编码
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Finishtime">
+            <summary>
+            Finishtime毕业时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.Remark">
+            <summary>
+            Remark备注
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.CreatedBy">
+            <summary>
+            CreatedBy创建人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.CreatedTime">
+            <summary>
+            CreatedTime创建时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.LastupdateBy">
+            <summary>
+            LastupdateBy最后修改名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysEmployees.LastupdateTime">
+            <summary>
+            LastupdateTime最后修改人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.Name">
+            <summary>
+            Name名称
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.Account">
+            <summary>
+            Account登入帐号
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.Password">
+            <summary>
+            Password登入密码
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.EmployeeId">
+            <summary>
+            EmployeeId员工Id
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.Status">
+            <summary>
+            Status用户状态 0是启用   1是禁用
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.Organizationals">
+            <summary>
+            Organizationals组织结构
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.IsSystem">
+            <summary>
+            IsSystem是否为系统管理员
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.LoginIp">
+            <summary>
+            LoginIp登入IP
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.IsDeleted">
+            <summary>
+            IsDeleted是否删除  0 false  1 true
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.CreatedBy">
+            <summary>
+            CreatedBy创建人
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.CreatedTime">
+            <summary>
+            CreatedTime创建时间
+            </summary>
+        </member>
+        <member name="P:SZP.Entity.SysUser.LoginAt">
+            <summary>
+            LoginAt最后登入时间
+            </summary>
+        </member>
+    </members>
+</doc>

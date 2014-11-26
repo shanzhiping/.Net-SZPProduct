@@ -1,0 +1,28 @@
+﻿<title>@Title - SZP企业管理系统</title>
+    <link href="/Scripts/easyui/themes/default/SZP/style.css" rel="stylesheet" type="text/css" />
+    <link href="/Scripts/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="/Scripts/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/easyui/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="/Scripts/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="/Scripts/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="/Scripts/easyui/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+
+      <script type="text/javascript">
+          //关闭window窗口提示并刷新当前打开的tab标签页
+          //title 提示框标题
+          //context 提示内容
+          //url 要跳转的路径
+          function viewTwo(title, context, url) {
+              $.messager.alert(title, context, 'info', function fn() {
+                  location.href = url;
+              });
+          }
+          //关闭window窗口提示并刷新当前打开的tab标签页
+          //title 提示框标题
+          //context 提示内容
+          function view(title, context,url) {
+              $.messager.alert(title, context, 'info', function fn() {
+                  location.href = url;
+              });              
+          }
+    </script>

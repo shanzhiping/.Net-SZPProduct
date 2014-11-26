@@ -1,0 +1,829 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysOrganizational" nillable="true" type="SysOrganizational" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysOrganizational" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Name组织结构名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnglishName" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>EnglishName英文名字</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Adddrss" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Adddrss位置</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Phone电话</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Fax" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Fax传真</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Remark备注</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CreatedBy创建人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="CreatedTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>CreatedTime创建时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="LastupdateBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>LastupdateBy最后修改名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="LastupdateTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>LastupdateTime最后修改人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysGroupMenu" nillable="true" type="SysGroupMenu" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysGroupMenu" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="GroupId" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>GroupId用户编号</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="MenuId" xmlns:q3="http://microsoft.com/wsdl/types/" type="q3:guid">
+          <xs:annotation>
+            <xs:documentation>MenuId菜单Id</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="OperationIds" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>OperationIds菜单行为ID是 用,隔开</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysDepartment" nillable="true" type="SysDepartment" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysDepartment" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Name部门名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnglishName" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>EnglishName英文名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="OrganizationalId" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>OrganizationalId组织结构编号</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="ParentId" xmlns:q3="http://microsoft.com/wsdl/types/" type="q3:guid">
+          <xs:annotation>
+            <xs:documentation>ParentId上级部门</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Adddrss" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Adddrss地址</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Phone电话</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Fax" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Fax传真</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Remark备注</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CreatedBy创建人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="CreatedTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>CreatedTime创建时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="LastupdateBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>LastupdateBy最后修改名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="LastupdateTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>LastupdateTime最后修改人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysGroup" nillable="true" type="SysGroup" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysGroup" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Name角色名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnglishName" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>EnglishName英文名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="OrganizationalId" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>OrganizationalId所属组织结构</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Remark描述</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="IsEnable" type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>IsEnable是否启用  0启用     1不启用</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="IsDeleted" type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>IsDeleted是否删除   0 否    1是</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CreatedBy创建人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="CreatedTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>CreatedTime创建时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="LastupdateBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>LastupdateBy最后修改人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="LastupdateTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>LastupdateTime修改时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysLog" nillable="true" type="SysLog" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysLog" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="EventId" type="xs:int">
+          <xs:annotation>
+            <xs:documentation>EventId</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="EventName" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>EventName</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Description</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="CreateAt" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>CreateAt</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="IP" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>IP</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="UserName" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>UserName</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="OrganizationalId" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>OrganizationalId</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysOperation" nillable="true" type="SysOperation" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysOperation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="MenuID" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>MenuID菜单Id</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Title" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Title名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnglishTitle" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>EnglishTitle英文名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="ControlId" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>ControlId控件Id</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="IconUrl" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>IconUrl控件图标</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Ordinal" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Ordinal排序</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="IsEnable" type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>IsEnable是否启用  0启用     1不启用</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysUserMenu" nillable="true" type="SysUserMenu" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysUserMenu" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="UserId" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>UserId用户Id</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="OrganizationalId" xmlns:q3="http://microsoft.com/wsdl/types/" type="q3:guid">
+          <xs:annotation>
+            <xs:documentation>OrganizationalId组织结构编号</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="MenuId" xmlns:q4="http://microsoft.com/wsdl/types/" type="q4:guid">
+          <xs:annotation>
+            <xs:documentation>MenuId菜单Id</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="OperationIds" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>OperationIds菜单行为ID是 用,隔开</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysPosition" nillable="true" type="SysPosition" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysPosition" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Name职位名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnglishName" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>EnglishName英文名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="DepartmentId" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>DepartmentId所属部门</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Remark备注</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CreatedBy创建人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="CreatedTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>CreatedTime创建时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="LastupdateBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>LastupdateBy最后修改名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="LastupdateTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>LastupdateTime最后修改人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysEmployees" nillable="true" type="SysEmployees" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysEmployees" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Number" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Number员工编号</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="JobNumber" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>JobNumber自定义员工编号</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Name员工姓名</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="Sex" type="xs:int">
+          <xs:annotation>
+            <xs:documentation>Sex员工性别  1男   2女  3其他</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="Birth" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>Birth员工出生日期</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Telephone" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Telephone联系电话</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="DepartmentId" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>DepartmentId归属部门</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="EntryTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>EntryTime离职时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="QuitTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>QuitTime</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="PositionId" xmlns:q3="http://microsoft.com/wsdl/types/" type="q3:guid">
+          <xs:annotation>
+            <xs:documentation>PositionId工作职位</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="WorkPart" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>WorkPart工作类别</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="SchoolRecord" type="xs:int">
+          <xs:annotation>
+            <xs:documentation>SchoolRecord学位   枚举  1高中    2大专   3本科   4博士</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="WorkPlaceWant" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>WorkPlaceWant工作地点意向</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="WorkRank" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>WorkRank技能评估</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="WorkCompetence" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>WorkCompetence工作能力</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="CurrentProjectId" xmlns:q4="http://microsoft.com/wsdl/types/" type="q4:guid">
+          <xs:annotation>
+            <xs:documentation>CurrentProjectId现在所在项目</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="WorkExperience" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>WorkExperience工作经验</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Address" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Address居住地址</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Census" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Census籍贯</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="NativePlace" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>NativePlace户口所在地</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Nation" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Nation民族</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Individualphone" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Individualphone个人联系电话</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Emailmail</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="IndirectContacts" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>IndirectContacts间接联系人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="IndirectContactsPhone" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>IndirectContactsPhone间接联系人电话</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Idcard" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Idcard身份证号</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Postalcode" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Postalcode</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Finishschool" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Finishschool户口邮政编码</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="Finishtime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>Finishtime毕业时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Remark备注</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CreatedBy创建人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="CreatedTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>CreatedTime创建时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="LastupdateBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>LastupdateBy最后修改名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="LastupdateTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>LastupdateTime最后修改人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:import namespace="http://microsoft.com/wsdl/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:element name="SysUser" nillable="true" type="SysUser" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+<xs:complexType name="SysUser" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexContent mixed="false">
+    <xs:extension base="BaseEntity">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="Id" xmlns:q1="http://microsoft.com/wsdl/types/" type="q1:guid">
+          <xs:annotation>
+            <xs:documentation>Id主键</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Name名称</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Account" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Account登入帐号</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Password" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Password登入密码</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="EmployeeId" xmlns:q2="http://microsoft.com/wsdl/types/" type="q2:guid">
+          <xs:annotation>
+            <xs:documentation>EmployeeId员工Id</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="Status" type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>Status用户状态 0是启用   1是禁用</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Organizationals" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Organizationals组织结构</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="IsSystem" type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>IsSystem是否为系统管理员</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="LoginIp" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>LoginIp登入IP</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="IsDeleted" type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>IsDeleted是否删除  0 false  1 true</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CreatedBy创建人</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="CreatedTime" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>CreatedTime创建时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" name="LoginAt" type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>LoginAt最后登入时间</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:complexType name="BaseEntity" abstract="true" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element minOccurs="1" maxOccurs="1" name="State" type="ObjectState" />
+  </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="ObjectState" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unchanged" />
+    <xs:enumeration value="Added" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Modified" />
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

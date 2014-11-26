@@ -1,0 +1,703 @@
+----- delete on -----==== Error Time:  2014-11-04 16:27:38  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:28:34  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:29:05  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:30:18  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:31:15  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:31:32  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:33:32  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:40:38  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:45:32  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:51:07  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:52:30  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:57:13  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:58:17  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:59:14  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:59:31  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:59:45  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 16:59:58  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:00:03  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:00:10  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:00:20  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:00:30  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:00:51  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:01:09  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:01:58  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:02:31  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:23:34  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-04 17:34:43  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 11:27:03  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 11:27:50  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 11:28:30  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 11:29:12  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 11:29:50  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 11:30:32  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 13:53:02  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 13:53:12  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 13:59:42  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)
+==== Error Time:  2014-11-05 13:59:59  ====
+System.InvalidOperationException: ErrGeneral:SZP.Entity.SysMenu ---> System.InvalidOperationException: 反射类型“SZP.Entity.SysMenu”时出错。 ---> System.InvalidOperationException: 无法序列化类型“System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]”的成员“SZP.Entity.SysMenu.Children”，有关详细信息，请参见内部异常。 ---> System.NotSupportedException: 类型 System.Collections.Generic.IList`1[[SZP.Entity.SysMenu, SZP.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 的成员 SZP.Entity.SysMenu.Children 是接口，因此无法将其序列化。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   在 System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   在 System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   在 System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type)
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 XSDHelper.TypeToXSD.ExportSchemas(Type type)
+   在 XSDHelper.TypeToXSD.ExportXSD(String typeName)
+   在 XSDHelper.AssemblyTypeToXSD.Export(String typeName)

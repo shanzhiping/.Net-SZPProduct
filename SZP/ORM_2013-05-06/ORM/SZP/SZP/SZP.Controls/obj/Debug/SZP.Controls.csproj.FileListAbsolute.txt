@@ -1,0 +1,15 @@
+E:\Practice\ORM\SZP\SZP\SZP.Controls\bin\Debug\SZP.Controls.dll
+E:\Practice\ORM\SZP\SZP\SZP.Controls\bin\Debug\SZP.Controls.pdb
+E:\Practice\ORM\SZP\SZP\SZP.Controls\obj\Debug\ResolveAssemblyReference.cache
+E:\Practice\ORM\SZP\SZP\SZP.Controls\obj\Debug\SZP.Controls.dll
+E:\Practice\ORM\SZP\SZP\SZP.Controls\obj\Debug\SZP.Controls.pdb
+L:\SZP\ORM\SZP\SZP\SZP.Controls\bin\Debug\SZP.Controls.dll
+L:\SZP\ORM\SZP\SZP\SZP.Controls\bin\Debug\SZP.Controls.pdb
+L:\SZP\ORM\SZP\SZP\SZP.Controls\obj\Debug\ResolveAssemblyReference.cache
+L:\SZP\ORM\SZP\SZP\SZP.Controls\obj\Debug\SZP.Controls.dll
+L:\SZP\ORM\SZP\SZP\SZP.Controls\obj\Debug\SZP.Controls.pdb
+I:\SZP\ORM\SZP\SZP\SZP.Controls\bin\Debug\SZP.Controls.dll
+I:\SZP\ORM\SZP\SZP\SZP.Controls\bin\Debug\SZP.Controls.pdb
+I:\SZP\ORM\SZP\SZP\SZP.Controls\obj\Debug\ResolveAssemblyReference.cache
+I:\SZP\ORM\SZP\SZP\SZP.Controls\obj\Debug\SZP.Controls.dll
+I:\SZP\ORM\SZP\SZP\SZP.Controls\obj\Debug\SZP.Controls.pdb

@@ -1,0 +1,13 @@
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll.config
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csprojResolveAssemblyReference.cache
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\SZP.Common.dll
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\SZP.Core.dll
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\SZP.Entity.dll
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\SZP.Common.pdb
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\SZP.Core.pdb
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\SZP.Entity.pdb
+D:\zpShan\SZP\ORM\SZP\SZP\WcfServiceLibrary1\bin\Debug\SZP.Entity.xml

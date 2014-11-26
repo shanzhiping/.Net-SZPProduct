@@ -1,0 +1,156 @@
+﻿<title>@Title - SZP企业管理系统</title>
+<link href="/Scripts/easyui/themes/default/SZP/style.css" rel="stylesheet" type="text/css" />
+<link href="/Scripts/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+<link href="/Scripts/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+<script src="/Scripts/easyui/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="/Scripts/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+<script src="/Scripts/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+<script src="/Scripts/easyui/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#tbody tr").mouseover(function () {
+            $(this).addClass("hover");
+        })
+        $("#tbody tr").mouseout(function () {
+            $(this).removeClass("hover");
+        })
+
+        //单击行选中是事件
+        $("#tbody tr").bind("click", function () {
+            $("#tbody tr").removeClass("select");
+            $(this).addClass('select');
+        })
+    });
+
+
+    var $parent = self.parent.$;
+    ///
+    ///在Top顶层弹出Window
+    ///
+    function openWin(url, width, height, title) {
+        var icon = "save";
+        if (url.indexOf("add") > 0) {
+            icon = "add";
+        }
+        if (url.indexOf("edit") > 0) {
+            icon = "edit";
+        }
+        if (url.indexOf("del") > 0) {
+            icon = "cut";
+        }
+        $parent('#pwin').window({
+            modal: true,
+            width: width,
+            height: height,
+            content: "<iframe scrolling='auto' frameborder='0'  src='" + url + "' style='width:100%;height:100%;'></iframe>",
+            iconCls: "icon-" + icon,
+            minimizable: false,
+            maximizable: false,
+            collapsible: false,
+            title: title
+        });
+    }
+    ///
+    ///在当前self页面弹出window
+    ///
+    function openWinThis(url, width, height, title) {
+        var icon = "save";
+        if (url.indexOf("add") > 0) {
+            icon = "add";
+        }
+        if (url.indexOf("edit") > 0) {
+            icon = "edit";
+        }
+        if (url.indexOf("del") > 0) {
+            icon = "cut";
+        }
+        $('#pwin').window({
+            modal: true,
+            width: width,
+            height: height,
+            content: "<iframe scrolling='auto' frameborder='0'  src='" + url + "' style='width:100%;height:100%;'></iframe>",
+            iconCls: "icon-" + icon,
+            minimizable: false,
+            maximizable: false,
+            collapsible: false,
+            title: title
+        });
+    }
+    function openTab(url, title) {
+        self.parent.addTab(title, url, "icon icon-nav")
+    }
+
+    function checkSelected() {
+        var checked = false;
+        $("input[name='ids']").each(function (e) {
+            if (this.checked == true) {
+                checked = true;
+                return;
+            }
+        });
+        return checked;
+    }
+
+    function checkAll(o) {
+        var checked = o.checked;
+        $("input[name='ids']").each(function (e) {
+            this.checked = checked;
+        });
+    }
+
+    function deletes() {
+        if (checkSelected() == false) {
+            alert("请选择要删除的项!");
+            return;
+        }
+        if (confirm("确定要删除选择的项么？") == false) {
+            return;
+        }
+        $('form').last().trigger('submit');
+    }
+
+    //关闭window窗口提示并刷新当前打开的tab标签页
+    //title 提示框标题
+    //context 提示内容
+    function view(title, context) {
+        $('#pwin').window('close');
+        $.messager.alert(title, context, 'into', function () {            
+            location.href = location.href;
+
+        });
+    }
+    //关闭window窗口提示并刷新当前打开的tab标签页
+    //title 提示框标题
+    //context 提示内容
+    //url 要跳转的路径
+    function ViewTwo(title, context, url) {
+        $.messager.alert(title, context, 'info');
+        $('#pwin').window('close');
+        //history.go(0);
+        location.href = url;
+    }
+
+    //关闭window窗口提示并刷新指定的panel
+    //title 提示框标题
+    //context 提示内容
+    //panel ID
+    //panel href链接的地址
+    function GetListView(title, context, panelId, url) {
+        $('#pwin').window('close');
+        $.messager.alert(title, context, 'into', function () {
+            $("#" + panelId).panel({
+                href: url
+            });
+        });
+    }
+    ///弹出提示
+    function Messager(title, context) {
+        $.messager.alert(title, context, 'into');
+    }
+</script>
+<style type="text/css">
+    .panel-body-noheader
+    {
+        border: none;
+    }
+</style>

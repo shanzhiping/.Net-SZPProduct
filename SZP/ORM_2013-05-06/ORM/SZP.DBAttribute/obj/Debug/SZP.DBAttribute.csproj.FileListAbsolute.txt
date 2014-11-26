@@ -1,0 +1,5 @@
+E:\Practice\ORM\SZP\SZP\SZP.DBAttribute\bin\Debug\SZP.DBAttribute.dll
+E:\Practice\ORM\SZP\SZP\SZP.DBAttribute\bin\Debug\SZP.DBAttribute.pdb
+E:\Practice\ORM\SZP\SZP\SZP.DBAttribute\obj\Debug\ResolveAssemblyReference.cache
+E:\Practice\ORM\SZP\SZP\SZP.DBAttribute\obj\Debug\SZP.DBAttribute.dll
+E:\Practice\ORM\SZP\SZP\SZP.DBAttribute\obj\Debug\SZP.DBAttribute.pdb

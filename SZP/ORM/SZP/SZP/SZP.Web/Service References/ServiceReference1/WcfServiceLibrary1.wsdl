@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="WcfServiceLibrary1" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="WcfServiceLibrary1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="WcfServiceLibrary1/Imports">
+      <xsd:import namespace="WcfServiceLibrary1" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceInstance_Add_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_Add_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_Subtract_InputMessage">
+    <wsdl:part name="parameters" element="tns:Subtract" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_Subtract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubtractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_Multiply_InputMessage">
+    <wsdl:part name="parameters" element="tns:Multiply" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_Multiply_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MultiplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_Divide_InputMessage">
+    <wsdl:part name="parameters" element="tns:Divide" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_Divide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DivideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_GetConcurrencyMode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConcurrencyMode" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_GetConcurrencyMode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConcurrencyModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_GetOperationCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOperationCount" />
+  </wsdl:message>
+  <wsdl:message name="IServiceInstance_GetOperationCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOperationCountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceInstance">
+    <wsdl:operation name="Add">
+      <wsdl:input wsaw:Action="WcfServiceLibrary1/IService1/Add" message="tns:IServiceInstance_Add_InputMessage" />
+      <wsdl:output wsaw:Action="WcfServiceLibrary1/IService1/AddResponse" message="tns:IServiceInstance_Add_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Subtract">
+      <wsdl:input wsaw:Action="WcfServiceLibrary1/IService1/Subtract" message="tns:IServiceInstance_Subtract_InputMessage" />
+      <wsdl:output wsaw:Action="WcfServiceLibrary1/IService1/SubtractResponse" message="tns:IServiceInstance_Subtract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Multiply">
+      <wsdl:input wsaw:Action="WcfServiceLibrary1/IService1/Multiply" message="tns:IServiceInstance_Multiply_InputMessage" />
+      <wsdl:output wsaw:Action="WcfServiceLibrary1/IService1/MultiplyResponse" message="tns:IServiceInstance_Multiply_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Divide">
+      <wsdl:input wsaw:Action="WcfServiceLibrary1/IService1/Divide" message="tns:IServiceInstance_Divide_InputMessage" />
+      <wsdl:output wsaw:Action="WcfServiceLibrary1/IService1/DivideResponse" message="tns:IServiceInstance_Divide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConcurrencyMode">
+      <wsdl:input wsaw:Action="WcfServiceLibrary1/IServiceInstance/GetConcurrencyMode" message="tns:IServiceInstance_GetConcurrencyMode_InputMessage" />
+      <wsdl:output wsaw:Action="WcfServiceLibrary1/IServiceInstance/GetConcurrencyModeResponse" message="tns:IServiceInstance_GetConcurrencyMode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationCount">
+      <wsdl:input wsaw:Action="WcfServiceLibrary1/IServiceInstance/GetOperationCount" message="tns:IServiceInstance_GetOperationCount_InputMessage" />
+      <wsdl:output wsaw:Action="WcfServiceLibrary1/IServiceInstance/GetOperationCountResponse" message="tns:IServiceInstance_GetOperationCount_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

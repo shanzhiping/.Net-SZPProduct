@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SZP.Web</name>
+    </assembly>
+    <members>
+        <member name="F:SZP.Web.Views.SYS.SysMenu.Detail.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Views.Home.LoginOn.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Views.Home.LoginOn.spanText">
+            <summary>
+            spanText 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Views.SYS.SysMenu.Edit.Head1">
+            <summary>
+            Head1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Account.Register.RegisterUser">
+            <summary>
+            RegisterUser 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Account.Register.RegisterUserWizardStep">
+            <summary>
+            RegisterUserWizardStep 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Account.Login.RegisterHyperLink">
+            <summary>
+            RegisterHyperLink 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Account.Login.LoginUser">
+            <summary>
+            LoginUser 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Views.SYS.SysMenu.Delete.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Views.SYS.SysOrganizational.Add.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Views.Home.LoginOut.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.SiteMaster.HeadContent">
+            <summary>
+            HeadContent 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.SiteMaster.MasterPageScriptManager">
+            <summary>
+            MasterPageScriptManager 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.SiteMaster.HeadLoginView">
+            <summary>
+            HeadLoginView 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.SiteMaster.HeadHomeLink">
+            <summary>
+            HeadHomeLink 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.SiteMaster.HeadAboutLink">
+            <summary>
+            HeadAboutLink 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.SiteMaster.MainContent">
+            <summary>
+            MainContent 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Account.ChangePassword.ChangeUserPassword">
+            <summary>
+            ChangeUserPassword 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Views.SYS.SysMenu.Add.Head1">
+            <summary>
+            Head1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:SZP.Web.Views.SYS.SysMenu.OperationDelete.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:SZP.Web.Views.Home.AjaxService.HomeHeaper">
+            <summary>
+            Summary description for HomeHeaper
+            </summary>
+        </member>
+        <member name="T:SZP.Web.App_GlobalResources.SYSResources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:SZP.Web.App_GlobalResources.SYSResources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:SZP.Web.App_GlobalResources.SYSResources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:SZP.Web.App_GlobalResources.SYSResources.failure">
+            <summary>
+              查找类似 提示：用户名或密码错误！！！ 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:SZP.Web.App_GlobalResources.SYSResources.Succeeded">
+            <summary>
+              查找类似 -系统登入 的本地化字符串。
+            </summary>
+        </member>
+    </members>
+</doc>

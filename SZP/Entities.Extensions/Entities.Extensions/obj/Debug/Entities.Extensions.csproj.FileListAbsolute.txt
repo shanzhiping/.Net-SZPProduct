@@ -1,0 +1,10 @@
+E:\实例\DotNet\Solution38\Entities.Extensions\bin\Debug\Entities.Extensions.dll
+E:\实例\DotNet\Solution38\Entities.Extensions\bin\Debug\Entities.Extensions.pdb
+E:\实例\DotNet\Solution38\Entities.Extensions\obj\Debug\ResolveAssemblyReference.cache
+E:\实例\DotNet\Solution38\Entities.Extensions\obj\Debug\Entities.Extensions.dll
+E:\实例\DotNet\Solution38\Entities.Extensions\obj\Debug\Entities.Extensions.pdb
+E:\Demo\Solution38\Entities.Extensions\bin\Debug\Entities.Extensions.dll
+E:\Demo\Solution38\Entities.Extensions\bin\Debug\Entities.Extensions.pdb
+E:\Demo\Solution38\Entities.Extensions\obj\Debug\ResolveAssemblyReference.cache
+E:\Demo\Solution38\Entities.Extensions\obj\Debug\Entities.Extensions.dll
+E:\Demo\Solution38\Entities.Extensions\obj\Debug\Entities.Extensions.pdb
