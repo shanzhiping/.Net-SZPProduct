@@ -1,0 +1,30 @@
+﻿@model Models.LogOnModel
+@{
+    ViewBag.Title = "用户登录";
+    ViewBag.CssSelf = @Url.Content("~/Content/themes/shine/ui.shine.login.css");
+    ViewBag.JsSelf = @Url.Content("~/Scripts/jquery.start.login.js");
+}
+@{Html.EnableUnobtrusiveJavaScript(true);}
+<div id="location">
+    @Html.ActionLink("首页", "Index", "Index")@Html.ActionLink("用户登录", "LogOn", "Account",null, new { @class = "child" })
+</div>
+<div id="main">
+    <div id="main_welcome">
+    </div>
+    <div id="main_login">
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            @Html.TextBoxFor(m => m.Name, new { @maxlength = "30" })
+            <span id="val_user" class="validmsg">请输入邮箱地址/昵称/手机号码</span>
+            @Html.EditorFor(m => m.Password, new { @maxlength = "20" })
+            <span id="val_pass" class="validmsg">请输入长度为6-20个字符的密码</span>
+            <span id="val_auto" class="validmsg">
+                @Html.CheckBoxFor(m => m.RememberMe, new { @title = "注意：不建议在公共计算机上选择此项！" })<b
+                    class="rmb" title="注意：不建议在公共计算机上选择此项！">记住密码？</b></span>
+            <input type="submit" name="login_submit" id="login_submit" value="" class="sub_static"
+                onclick="return CheckSubmit();" />
+             @Html.ActionLink("[立即注册]", "Reg", "Account", null, new { @class = "login_new" })
+        }
+    </div>
+</div>

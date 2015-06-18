@@ -1,0 +1,28 @@
+﻿.panel_left
+{
+    float: left;
+    width:50%;
+}
+.panel_right
+{
+    margin-left:10px;
+    margin-right:0px;
+    float: right;
+    width:auto;
+}
+.spliter
+{
+    float: left;
+    width:10px;
+}
+.stock_wrapper
+{
+    padding:0px;
+    margin:0px;
+    width:100%;
+    border:0px;
+ }
+ .stock_wrapper td
+ {
+     vertical-align:top;
+     }

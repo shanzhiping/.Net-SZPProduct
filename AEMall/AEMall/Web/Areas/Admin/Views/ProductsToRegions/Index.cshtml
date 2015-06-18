@@ -1,0 +1,54 @@
+﻿@model PagedList<Models.ProductsToRegions>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+
+    @{Html.RenderPartial("Button_Search");}
+
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+        <thead>
+            <tr>
+				<th>
+					简述
+				</th>
+
+				<th>
+					商品
+				</th>
+
+				<th>
+					区域
+				</th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+					<td>
+						@item.Name
+					</td>
+
+					<td>
+						@item.ProductId
+					</td>
+
+					<td>
+						@item.RegionId
+					</td>
+                    <td class="center operation">
+                        @{Html.RenderPartial("Link_Operations",item);}
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+	@Html.Raw(Ajax.MikePager(Model))

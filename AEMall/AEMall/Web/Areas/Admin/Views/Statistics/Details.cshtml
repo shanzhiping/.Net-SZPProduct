@@ -1,0 +1,84 @@
+﻿@model Models.Statistics
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.CreateTime)
+            </th>
+            <td>
+                @Model.CreateTime
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.TotalUsers)
+            </th>
+            <td>
+                @Model.TotalUsers
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.TotalCustomers)
+            </th>
+            <td>
+                @Model.TotalCustomers
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.TotalProducts)
+            </th>
+            <td>
+                @Model.TotalProducts
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.TotalOrders)
+            </th>
+            <td>
+                @Model.TotalOrders
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.NewUserInPast24Hrs)
+            </th>
+            <td>
+                @Model.NewUserInPast24Hrs
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.NewestUserId)
+            </th>
+            <td>
+                @Model.NewestUserId
+            </td>
+		</tr>
+    </table>
+</fieldset>
+

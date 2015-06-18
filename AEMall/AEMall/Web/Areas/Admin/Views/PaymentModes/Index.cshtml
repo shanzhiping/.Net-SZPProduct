@@ -1,0 +1,126 @@
+﻿@model PagedList<Models.PaymentModes>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+
+    @{Html.RenderPartial("Button_Search");}
+
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+        <thead>
+            <tr>
+				<th>
+					名称
+				</th>
+
+				<th>
+					商家代码
+				</th>
+
+				<th>
+					电子邮箱
+				</th>
+
+				<th>
+					首选蜜月
+				</th>
+
+				<th>
+					备选密钥
+				</th>
+
+				<th>
+					密码
+				</th>
+
+				<th>
+					伙伴
+				</th>
+
+				<th>
+					网关
+				</th>
+
+				<th>
+					序号
+				</th>
+
+				<th>
+					限额
+				</th>
+
+				<th>
+					百分比？
+				</th>
+
+				<th>
+					描述
+				</th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+					<td>
+						@item.Name
+					</td>
+
+					<td>
+						@item.MerchantCode
+					</td>
+
+					<td>
+						@item.Email
+					</td>
+
+					<td>
+						@item.SecretKey
+					</td>
+
+					<td>
+						@item.SecondKey
+					</td>
+
+					<td>
+						@item.Password
+					</td>
+
+					<td>
+						@item.Partner
+					</td>
+
+					<td>
+						@item.Gateway
+					</td>
+
+					<td>
+						@item.Sequence
+					</td>
+
+					<td>
+						@item.Charge
+					</td>
+
+					<td>
+						@item.IsPercent
+					</td>
+
+					<td>
+						@item.Description
+					</td>
+                    <td class="center operation">
+                        @{Html.RenderPartial("Link_Operations",item);}
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+	@Html.Raw(Ajax.MikePager(Model))

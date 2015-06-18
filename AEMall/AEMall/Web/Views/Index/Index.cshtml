@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "首页1";
+    ViewBag.CssSelf = @Url.Content("~/Content/themes/shine/ui.shine.main.css");
+    ViewBag.JsSelf = @Url.Content("~/Scripts/jquery.start.main.js");
+    
+}
+<div id="cat_holder">
+</div>
+<div id="special">
+   @*@{Html.RenderAction("LeftFix");}*@
+</div>
+<div id="promotion">
+    <div id="slider_wrapper">
+        <div id="slide">
+            @*@{Html.RenderAction("Focus");}*@
+        </div>
+    </div>
+    <div id="tabpro_wrapper">
+        <ul id="tabpro" class="clearfix">
+            <li>促销活动</li>
+            <li>天宝动态</li>
+        </ul>
+        <div id="tabcent">
+            @*@{Html.RenderAction("Articles");}*@
+        </div>
+    </div>
+    <div id="hslider_wrapper">
+        <a href="javascript:void(0);" class="prev" title="上翻"></a>
+        <div id="hslider">
+            @*@{Html.RenderAction("Hot");}*@
+        </div>
+        <a href="javascript:void(0);" class="next" title="下翻"></a>
+    </div>
+    <div id="corner">
+         @*@{Html.RenderAction("RightFix");}*@
+    </div>
+    <div id="bigtabs_wrapper">
+        <ul id="bigtabs" class="clearfix">
+            <li>热销</li>
+            <li>包邮</li>
+            <li>特色</li>
+            <li>工艺</li>
+        </ul>
+        <div id="bigtabcent">
+            @{Html.RenderAction("Tabs", "Index");}
+        </div>
+    </div>
+</div>
+<div id="areas_wrapper">
+    <div class="area" id="china">
+        <span class="area_title">
+            <ul>
+                <li><a href=".">北京</a></li>
+                <li>|</li>
+                <li><a href=".">天津</a></li>
+                <li>|</li>
+                <li><a href=".">上海</a></li>
+                <li>|</li>
+                <li><a href=".">广州</a></li>
+                <li>|</li>
+                <li><a href=".">武汉</a></li>
+                <li>|</li>
+                <li><a href=".">青岛</a></li>
+            </ul>
+            <a href="." class="more">更多>></a> </span>
+        <div class="area_left">
+            @{Html.RenderAction("Regions", "Index");}
+            
+            
+        </div>
+        <div class="area_right">
+            <span class="area_right_title">&loz;&nbsp;中国特产畅销榜</span>
+            @{Html.RenderAction("RankList", "Products");}
+        </div>
+    </div>
+    <div class="area" id="oversea">
+        <span class="area_title">
+            <ul>
+                <li><a href=".">英国</a></li>
+                <li>|</li>
+                <li><a href=".">美国</a></li>
+                <li>|</li>
+                <li><a href=".">越南</a></li>
+                <li>|</li>
+                <li><a href=".">日本</a></li>
+                <li>|</li>
+                <li><a href=".">韩国</a></li>
+                <li>|</li>
+                <li><a href=".">法国</a></li>
+            </ul>
+            <a href="." class="more">更多>></a> </span>
+        <div class="area_left">
+           @{Html.RenderAction("Regions", "Index");}
+        </div>
+        <div class="area_right">
+            <span class="area_right_title">&loz;&nbsp;海外特产畅销榜</span>
+            @{Html.RenderAction("RankList", "Products");}
+            
+           
+        </div>
+    </div>
+</div>

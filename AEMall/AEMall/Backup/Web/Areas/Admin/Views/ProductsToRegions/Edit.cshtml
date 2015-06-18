@@ -1,0 +1,40 @@
+﻿@model Models.ProductsToRegions
+@using (Ajax.BeginForm(new AjaxOptions() { UpdateTargetId = "Main" }))
+{
+    <div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+    <fieldset>
+        <legend>新建/编辑</legend>       
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.Name)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.Name)
+                    @Html.ValidationMessageFor(model => model.Name)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.ProductId)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.ProductId)
+                    @Html.ValidationMessageFor(model => model.ProductId)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.RegionId)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.RegionId)
+                    @Html.ValidationMessageFor(model => model.RegionId)
+                 </div>
+			</div>
+            @{Html.RenderPartial("Button_Submit");}       
+    </fieldset>
+}

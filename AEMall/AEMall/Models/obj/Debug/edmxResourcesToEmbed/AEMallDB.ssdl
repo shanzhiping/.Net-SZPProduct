@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Gift163DBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Gift163DBModelStoreContainer">
+    <EntitySet Name="Articles" EntityType="Gift163DBModel.Store.Articles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Configs" EntityType="Gift163DBModel.Store.Configs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Gallery" EntityType="Gift163DBModel.Store.Gallery" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Genres" EntityType="Gift163DBModel.Store.Genres" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Logs" EntityType="Gift163DBModel.Store.Logs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderItems" EntityType="Gift163DBModel.Store.OrderItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orders" EntityType="Gift163DBModel.Store.Orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PaymentModes" EntityType="Gift163DBModel.Store.PaymentModes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pictures" EntityType="Gift163DBModel.Store.Pictures" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Products" EntityType="Gift163DBModel.Store.Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductsInTypes" EntityType="Gift163DBModel.Store.ProductsInTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductsToRegions" EntityType="Gift163DBModel.Store.ProductsToRegions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductTypes" EntityType="Gift163DBModel.Store.ProductTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Regions" EntityType="Gift163DBModel.Store.Regions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Roles" EntityType="Gift163DBModel.Store.Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ShippingAddress" EntityType="Gift163DBModel.Store.ShippingAddress" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ShoppingCart" EntityType="Gift163DBModel.Store.ShoppingCart" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Statistics" EntityType="Gift163DBModel.Store.Statistics" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="Gift163DBModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserRanks" EntityType="Gift163DBModel.Store.UserRanks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="Gift163DBModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UsersInRoles" EntityType="Gift163DBModel.Store.UsersInRoles" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_ARTICLES_REFERENCE_GENRES" Association="Gift163DBModel.Store.FK_ARTICLES_REFERENCE_GENRES">
+      <End Role="Genres" EntitySet="Genres" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ARTICLES_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_ARTICLES_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GALLERY_REFERENCE_PRODUCTS" Association="Gift163DBModel.Store.FK_GALLERY_REFERENCE_PRODUCTS">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Gallery" EntitySet="Gallery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GENRES_REFERENCE_GENRES" Association="Gift163DBModel.Store.FK_GENRES_REFERENCE_GENRES">
+      <End Role="Genres" EntitySet="Genres" />
+      <End Role="Genres1" EntitySet="Genres" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LOGS_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_LOGS_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Logs" EntitySet="Logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDERITE_REFERENCE_ORDERS" Association="Gift163DBModel.Store.FK_ORDERITE_REFERENCE_ORDERS">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDERITE_REFERENCE_PRODUCTS" Association="Gift163DBModel.Store.FK_ORDERITE_REFERENCE_PRODUCTS">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDERS_REFERENCE_PAYMENTM" Association="Gift163DBModel.Store.FK_ORDERS_REFERENCE_PAYMENTM">
+      <End Role="PaymentModes" EntitySet="PaymentModes" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDERS_REFERENCE_USER1" Association="Gift163DBModel.Store.FK_ORDERS_REFERENCE_USER1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PICTURES_REFERENCE_ARTICLES" Association="Gift163DBModel.Store.FK_PICTURES_REFERENCE_ARTICLES">
+      <End Role="Articles" EntitySet="Articles" />
+      <End Role="Pictures" EntitySet="Pictures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCT3" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_PRODUCT3">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductsToRegions" EntitySet="ProductsToRegions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCTS" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_PRODUCTS">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductsInTypes" EntitySet="ProductsInTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCTT" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_PRODUCTT">
+      <End Role="ProductTypes" EntitySet="ProductTypes" />
+      <End Role="ProductsInTypes" EntitySet="ProductsInTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_REFERENCE_REGION1" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_REGION1">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_REFERENCE_REGIONS" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_REGIONS">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="ProductsToRegions" EntitySet="ProductsToRegions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTT_REFERENCE_PRODUCTT" Association="Gift163DBModel.Store.FK_PRODUCTT_REFERENCE_PRODUCTT">
+      <End Role="ProductTypes" EntitySet="ProductTypes" />
+      <End Role="ProductTypes1" EntitySet="ProductTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGIONS_REFERENCE_REGIONS" Association="Gift163DBModel.Store.FK_REGIONS_REFERENCE_REGIONS">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Regions1" EntitySet="Regions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIPPING_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_SHIPPING_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ShippingAddress" EntitySet="ShippingAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHOPPING_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_SHOPPING_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ShoppingCart" EntitySet="ShoppingCart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_STATISTI_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_STATISTI_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Statistics" EntitySet="Statistics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USERPROF_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_USERPROF_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserProfile" EntitySet="UserProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USERS_REFERENCE_REGIONS" Association="Gift163DBModel.Store.FK_USERS_REFERENCE_REGIONS">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USERS_REFERENCE_USERRANK" Association="Gift163DBModel.Store.FK_USERS_REFERENCE_USERRANK">
+      <End Role="UserRanks" EntitySet="UserRanks" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USERSINR_REFERENCE_ROLES" Association="Gift163DBModel.Store.FK_USERSINR_REFERENCE_ROLES">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UsersInRoles" EntitySet="UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USERSINR_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_USERSINR_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UsersInRoles" EntitySet="UsersInRoles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Articles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="VoidTime" Type="datetime" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+    <Property Name="GenreId" Type="uniqueidentifier" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Configs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="IsValid" Type="bit" />
+    <Property Name="Content" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Gallery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="ProductId" Type="uniqueidentifier" />
+    <Property Name="ThumbnailsUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Genres">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="ParentId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="OrderItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="OrderId" Type="uniqueidentifier" />
+    <Property Name="ProductId" Type="uniqueidentifier" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="ThumbUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="RealName" Type="nvarchar" MaxLength="20" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="ShippingRegion" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="PostCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Mobil" Type="nvarchar" MaxLength="20" />
+    <Property Name="Tel" Type="nvarchar" MaxLength="20" />
+    <Property Name="PaymentModeId" Type="uniqueidentifier" />
+    <Property Name="PaymentGateway" Type="nvarchar" MaxLength="20" />
+    <Property Name="IsPaid" Type="bit" />
+    <Property Name="Freight" Type="money" />
+    <Property Name="Weight" Type="decimal" />
+    <Property Name="CostPrice" Type="money" />
+    <Property Name="ShipOrderNumber" Type="nvarchar" MaxLength="20" />
+    <Property Name="IsPOD" Type="bit" />
+    <Property Name="Total" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="PaymentModes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="MerchantCode" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="SecretKey" Type="nvarchar" />
+    <Property Name="SecondKey" Type="nvarchar" />
+    <Property Name="Password" Type="nvarchar" />
+    <Property Name="Partner" Type="nvarchar" MaxLength="255" />
+    <Property Name="Gateway" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="Charge" Type="money" />
+    <Property Name="IsPercent" Type="bit" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Pictures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="ArticleId" Type="uniqueidentifier" />
+    <Property Name="ThumbnailsUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="SKU" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegionId" Type="uniqueidentifier" />
+    <Property Name="Brand" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Weight" Type="decimal" Precision="6" Scale="3" />
+    <Property Name="Keywords" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsRecommended" Type="bit" />
+    <Property Name="SalePrice" Type="money" />
+    <Property Name="MarketPrice" Type="money" />
+    <Property Name="SoldCount" Type="int" />
+    <Property Name="Discount" Type="decimal" />
+    <Property Name="Latitude" Type="decimal" Scale="6" />
+    <Property Name="Longitude" Type="decimal" Scale="6" />
+    <Property Name="Stock" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="VistiCounts" Type="int" />
+    <Property Name="SuperId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="ProductsInTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductId" Type="uniqueidentifier" />
+    <Property Name="TypeId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="ProductsToRegions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="ProductId" Type="uniqueidentifier" />
+    <Property Name="RegionId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="ProductTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="ParentId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sequence" Type="int" />
+    <Property Name="ParentId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="Sequence" Type="int" />
+  </EntityType>
+  <EntityType Name="ShippingAddress">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="Mobil" Type="nvarchar" MaxLength="20" />
+    <Property Name="Tel" Type="nvarchar" MaxLength="20" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="PostCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="IsDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="ShoppingCart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductId" Type="uniqueidentifier" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Statistics">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="TotalUsers" Type="int" />
+    <Property Name="TotalCustomers" Type="int" />
+    <Property Name="TotalProducts" Type="int" />
+    <Property Name="TotalOrders" Type="int" />
+    <Property Name="NewUserInPast24Hrs" Type="int" />
+    <Property Name="NewestUserId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="Gender" Type="bit" />
+    <Property Name="Avatar" Type="nvarchar" MaxLength="255" />
+    <Property Name="TotalOrder" Type="int" />
+    <Property Name="QQ" Type="nvarchar" MaxLength="20" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="UserRanks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="Sequence" Type="int" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="Password" Type="nvarchar" MaxLength="32" />
+    <Property Name="RealName" Type="nvarchar" MaxLength="50" />
+    <Property Name="RankId" Type="uniqueidentifier" />
+    <Property Name="IsPower" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="RegionId" Type="uniqueidentifier" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobil" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="UsersInRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="RoleId" Type="uniqueidentifier" />
+  </EntityType>
+  <Association Name="FK_ARTICLES_REFERENCE_GENRES">
+    <End Role="Genres" Type="Gift163DBModel.Store.Genres" Multiplicity="0..1" />
+    <End Role="Articles" Type="Gift163DBModel.Store.Articles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genres">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="GenreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ARTICLES_REFERENCE_USERS">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Articles" Type="Gift163DBModel.Store.Articles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GALLERY_REFERENCE_PRODUCTS">
+    <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="0..1" />
+    <End Role="Gallery" Type="Gift163DBModel.Store.Gallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Gallery">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GENRES_REFERENCE_GENRES">
+    <End Role="Genres" Type="Gift163DBModel.Store.Genres" Multiplicity="0..1" />
+    <End Role="Genres1" Type="Gift163DBModel.Store.Genres" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genres">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Genres1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LOGS_REFERENCE_USERS">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Logs" Type="Gift163DBModel.Store.Logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Logs">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDERITE_REFERENCE_ORDERS">
+    <End Role="Orders" Type="Gift163DBModel.Store.Orders" Multiplicity="0..1" />
+    <End Role="OrderItems" Type="Gift163DBModel.Store.OrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDERITE_REFERENCE_PRODUCTS">
+    <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="0..1" />
+    <End Role="OrderItems" Type="Gift163DBModel.Store.OrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDERS_REFERENCE_PAYMENTM">
+    <End Role="PaymentModes" Type="Gift163DBModel.Store.PaymentModes" Multiplicity="0..1" />
+    <End Role="Orders" Type="Gift163DBModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentModes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="PaymentModeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDERS_REFERENCE_USER1">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Orders" Type="Gift163DBModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PICTURES_REFERENCE_ARTICLES">
+    <End Role="Articles" Type="Gift163DBModel.Store.Articles" Multiplicity="0..1" />
+    <End Role="Pictures" Type="Gift163DBModel.Store.Pictures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pictures">
+        <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_REFERENCE_PRODUCT3">
+    <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="0..1" />
+    <End Role="ProductsToRegions" Type="Gift163DBModel.Store.ProductsToRegions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductsToRegions">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_REFERENCE_PRODUCTS">
+    <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="0..1" />
+    <End Role="ProductsInTypes" Type="Gift163DBModel.Store.ProductsInTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductsInTypes">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_REFERENCE_PRODUCTT">
+    <End Role="ProductTypes" Type="Gift163DBModel.Store.ProductTypes" Multiplicity="0..1" />
+    <End Role="ProductsInTypes" Type="Gift163DBModel.Store.ProductsInTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductsInTypes">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_REFERENCE_REGION1">
+    <End Role="Regions" Type="Gift163DBModel.Store.Regions" Multiplicity="0..1" />
+    <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_REFERENCE_REGIONS">
+    <End Role="Regions" Type="Gift163DBModel.Store.Regions" Multiplicity="0..1" />
+    <End Role="ProductsToRegions" Type="Gift163DBModel.Store.ProductsToRegions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductsToRegions">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_REFERENCE_USERS">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="SuperId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTT_REFERENCE_PRODUCTT">
+    <End Role="ProductTypes" Type="Gift163DBModel.Store.ProductTypes" Multiplicity="0..1" />
+    <End Role="ProductTypes1" Type="Gift163DBModel.Store.ProductTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductTypes1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGIONS_REFERENCE_REGIONS">
+    <End Role="Regions" Type="Gift163DBModel.Store.Regions" Multiplicity="0..1" />
+    <End Role="Regions1" Type="Gift163DBModel.Store.Regions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Regions1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIPPING_REFERENCE_USERS">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="ShippingAddress" Type="Gift163DBModel.Store.ShippingAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ShippingAddress">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHOPPING_REFERENCE_USERS">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="ShoppingCart" Type="Gift163DBModel.Store.ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ShoppingCart">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_STATISTI_REFERENCE_USERS">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Statistics" Type="Gift163DBModel.Store.Statistics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Statistics">
+        <PropertyRef Name="NewestUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USERPROF_REFERENCE_USERS">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="UserProfile" Type="Gift163DBModel.Store.UserProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserProfile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USERS_REFERENCE_REGIONS">
+    <End Role="Regions" Type="Gift163DBModel.Store.Regions" Multiplicity="0..1" />
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USERS_REFERENCE_USERRANK">
+    <End Role="UserRanks" Type="Gift163DBModel.Store.UserRanks" Multiplicity="0..1" />
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRanks">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RankId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USERSINR_REFERENCE_ROLES">
+    <End Role="Roles" Type="Gift163DBModel.Store.Roles" Multiplicity="0..1" />
+    <End Role="UsersInRoles" Type="Gift163DBModel.Store.UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UsersInRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USERSINR_REFERENCE_USERS">
+    <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="UsersInRoles" Type="Gift163DBModel.Store.UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UsersInRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

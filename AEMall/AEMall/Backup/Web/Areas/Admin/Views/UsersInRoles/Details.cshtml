@@ -1,0 +1,39 @@
+﻿@model Models.UsersInRoles
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.UserId)
+            </th>
+            <td>
+                @Model.UserId
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.RoleId)
+            </th>
+            <td>
+                @Model.RoleId
+            </td>
+		</tr>
+    </table>
+</fieldset>
+

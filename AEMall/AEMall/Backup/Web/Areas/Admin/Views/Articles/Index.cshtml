@@ -1,0 +1,66 @@
+﻿@model PagedList<Models.Articles>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+    @{Html.RenderPartial("Button_Search");}
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+    <thead>
+        <tr>
+            <th>
+                标题
+            </th>
+            <th>
+                所属分类
+            </th>
+            <th>
+                创建时间
+            </th>
+            <th>
+                失效时间
+            </th>
+            <th>
+                作者
+            </th>
+             <th>
+                状态
+            </th>
+            <th>
+                操作
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Genres.Name
+                </td>
+                <td class="center">
+                    @String.Format("{0:yyyy-MM-dd HH:mm:ss}", item.CreateTime)
+                </td>
+                <td class="center">
+                    @String.Format("{0:yyyy-MM-dd HH:mm:ss}", item.VoidTime)
+                </td>
+                <td>
+                    @item.Users.Name
+                </td>
+                 <td class="center">
+                    @Html.Raw(DateTime.Now > item.VoidTime.Value ? false.ToChnBool(false, "有效", "失效") : true.ToChnBool(false, "有效", "失效"))
+                </td>
+                <td class="center operation">
+                    @{Html.RenderPartial("Link_Operations", item);}
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.Raw(Ajax.MikePager(Model))

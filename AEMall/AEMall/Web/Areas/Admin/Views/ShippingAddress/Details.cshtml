@@ -1,0 +1,75 @@
+﻿@model Models.ShippingAddress
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Mobil)
+            </th>
+            <td>
+                @Model.Mobil
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Tel)
+            </th>
+            <td>
+                @Model.Tel
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Address)
+            </th>
+            <td>
+                @Model.Address
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.PostCode)
+            </th>
+            <td>
+                @Model.PostCode
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.UserId)
+            </th>
+            <td>
+                @Model.UserId
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.IsDefault)
+            </th>
+            <td>
+                @Model.IsDefault
+            </td>
+		</tr>
+    </table>
+</fieldset>
+

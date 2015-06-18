@@ -1,0 +1,8 @@
+﻿<div id="gallery_queue"></div>
+<img id="@ViewData.ModelMetadata.PropertyName" src="@Model" style="max-height: 100px;
+    max-width: 200px;" alt="" />
+@Html.HiddenFor(model=>model)
+<div id="garage"></div>
+<img alt="" src="@Url.Content("~/Scripts/JqueryUploadify/images/spacer.png")" onload="StartUploadify('@ViewData.ModelMetadata.PropertyName','@(DateTime.Now.Year)/@(DateTime.Now.Month)')" />
+<input
+    id="@(ViewData.ModelMetadata.PropertyName)_Temp" type="file" />

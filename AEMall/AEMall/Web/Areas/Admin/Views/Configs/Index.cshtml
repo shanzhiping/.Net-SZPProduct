@@ -1,0 +1,48 @@
+﻿@model PagedList<Models.Configs>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+    @{Html.RenderPartial("Button_Search");}
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+    <thead>
+        <tr>
+            <th>
+                名称
+            </th>
+            <th>
+                开关
+            </th>
+            <th>
+                内容
+            </th>
+            <th>
+                操作
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td class="center">
+                    @Html.Raw(item.IsValid.Value.ToChnBool(false,"开启","关闭"))
+                </td>
+                <td>
+                    @item.Content
+                </td>
+                <td class="center operation">
+                    @{Html.RenderPartial("LinkSimp_Operations", item);}
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.Raw(Ajax.MikePager(Model))

@@ -1,0 +1,559 @@
+#main_wrapper #main
+{
+    margin: 0px auto;
+    width: 1000px;
+    padding: 0px;
+    border: 0px;
+    background: #fff;
+    font: normal 12px/20px Verdana, "宋体";
+}
+#main .clear
+{
+    clear: both;
+}
+#main .inner_left
+{
+    float: left;
+    width: 222px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.left_title
+{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: #efefef;
+    line-height: 30px;
+    font-weight: bold;
+    color: #c00;
+    text-indent: 5px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.left_content
+{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 100px;
+    text-indent: 5px;
+}
+#main .area_right
+{
+    float: left;
+}
+.area_right a
+{
+    color: #333;
+    text-decoration: none;
+}
+.area_right a:hover
+{
+    color: #f33;
+    text-decoration: underline;
+}
+#main .inner_right
+{
+    float: right;
+    width: 742px;
+    padding: 10px;
+    border: 2px solid #930;
+    background: #fff;
+}
+.inner_right .article_title
+{
+    margin: 0px auto;
+    display: block;
+    width: 98%;
+    height: 35px;
+    font: bold 18px/35px Verdana, "Microsoft Yahei";
+    text-align: center;
+    color: #333;
+    border-bottom: 1px dashed #ccc;
+}
+.inner_right .article_title_sub
+{
+    margin: 10px auto;
+    display: block;
+    width: 98%;
+    height: 20px;
+    font: normal 12px/20px Verdana, "Microsoft Yahei";
+    text-align: center;
+    color: #999;
+}
+.inner_right .article_content
+{
+    margin: 10px auto;
+    display: block;
+    width: 98%;
+    font: normal 12px/22px Verdana, "Microsoft Yahei";
+    color: #666;
+}
+.inner_right .right_title
+{
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    font: normal 20px/30px Verdana, "Microsoft Yahei";
+}
+.inner_right .right_title b
+{
+    color: #930;
+}
+.inner_right .right_img
+{
+    float: right;
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+.right_img li
+{
+    float: right;
+    display: none;
+    width: 298px;
+    height: 298px;
+    margin:0px;
+    padding:0px;
+    border: 1px solid #999;
+}
+.right_img a
+{
+    display: block;
+    width: 298px;
+    height: 298px;
+    border: 0px;
+}
+.inner_right .right_img img
+{
+    width: 298px;
+    height: 298px;
+    border: 0px;
+}
+
+/* This is the moving lens square underneath the mouse pointer. */
+.cloud-zoom-lens {
+	border: 4px solid #888;
+	margin:-4px;	/* Set this to minus the border thickness. */
+	background-color:#fff;	
+	cursor:move;		
+}
+
+/* This is for the title text. */
+.cloud-zoom-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	top:0px;
+}
+
+/* This is the zoom window. */
+.cloud-zoom-big {
+	border:2px solid #ccc;
+	overflow:hidden;
+}
+
+/* This is the loading message. */
+.cloud-zoom-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #000;
+}
+.inner_right .right_img_list
+{
+    float: right;
+    margin-top:9px;
+    display: block;
+    width: 298px;
+    height: 52px;
+    border: 0px;
+}
+.right_img_list a.img_nav_button
+{
+    display: block;
+    width: 10px;
+    height: 50px;
+    border: 0px;
+    text-indent:-9999px;
+    background:url(images/bg_img_button.gif) no-repeat;
+}
+.right_img_list a.img_nav_button:hover
+{
+    display: block;
+    width: 10px;
+    height: 50px;
+    border: 0px;
+    text-indent:-9999px;
+    background:url(images/bg_img_button_act.gif) no-repeat;
+}
+.right_img_list #img_nav_left
+{
+    float:left;
+    background-position:0px 0px;
+}
+.right_img_list #img_nav_right
+{
+    float:right;
+    background-position:-9px 0px;
+}
+.right_img_list #img_list_box
+{
+    float:left;
+    display: block;
+    width: 278px;
+    height: 52px;
+    border: 0px;
+}
+#img_list_box #img_list
+{
+    margin:0px;
+    padding:0px;
+    display: block;
+    width: 278px;
+    height: 52px;
+    list-style:none;  
+    overflow:hidden;
+}
+#img_list li
+{
+    float:left;
+    margin:0px;
+    margin-left:3px;
+    padding:0px;
+    height: 52px;
+    display:inline;
+}
+#img_list li a
+{
+    margin:0px;
+    padding:0px;
+    width:50px;
+    height: 50px;
+    border:1px solid #ccc;
+    background:#fff;
+    display:block;
+}
+#img_list li a:hover
+{
+    margin:0px;
+    padding:0px;
+    width:50px;
+    height: 50px;
+    border:1px solid #f60;
+    background:#f60;
+    display:block;
+}
+#img_list li a img
+{
+    margin:1px;
+    padding:0px;
+    width:48px;
+    height: 48px;
+    border:0px;
+    display:block;
+}
+.inner_right #product_detail
+{
+    float: left;
+    width: 433px;
+    border: 1px solid #ccc;
+    background: #efefef;
+    color: #333;
+    font: bold 12px/25px "Microsoft Yahei" ,Verdana, "宋体";
+}
+.inner_right #product_detail th
+{
+    border-right: 1px solid #ccc;
+    text-align: left;
+    text-indent: 5px;
+    width: 180px;
+}
+.inner_right #product_detail th b
+{
+    font-weight: normal;
+    color: #666;
+}
+.inner_right #product_detail td
+{
+    text-align: center;
+    color: #c00;
+    font: bold 30px/150px "Microsoft Yahei" ,Verdana, "宋体";
+}
+.inner_right .right_buy_top
+{
+    float: left;
+    margin-top: 96px !important;
+    margin-top: 90px;
+    height: 12px;
+    width: 393px;
+    border: 1px solid #EAD057;
+    border-bottom: 1px dotted #EAD057;
+    background: #FFFCEB;
+    line-height: 12px;
+    padding: 19px;
+    color: #666;
+}
+.inner_right .right_buy_top span
+{
+    float: left;
+    vertical-align: middle;
+    height: 12px;
+    line-height: 14px;
+    _line-height: 18px;
+}
+.inner_right .right_buy_top input
+{
+    width: 25px;
+    height: 12px;
+    margin: 0px 2px;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #333;
+    font:normal 12px/12px Verdana;
+}
+.inner_right .right_buy_top b
+{
+    color: #f60;
+    font-weight: normal;
+    height: 12px;
+    line-height: 12px;
+}
+.inner_right .right_buy_top a
+{
+    float: left;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 12px;
+}
+.inner_right .right_buy_top a:hover
+{
+    float: left;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #999;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 12px;
+}
+.inner_right .right_buy_bottom
+{
+    float: left;
+    margin: 0px;
+    height: 40px;
+    width: 411px;
+    padding: 10px;
+    border: 1px solid #EAD057;
+    border-top: 0px;
+    background: #FFFCEB;
+}
+.inner_right .right_buy_act
+{
+    border-color: #f60;
+}
+.inner_right .right_buy_bottom input
+{
+    display: block;
+    width: 160px;
+    height: 40px;
+    text-indent: -9999px;
+    border: 0px;
+    cursor: pointer;
+   
+}
+.button_buy_static
+{
+     background: url(images/bg_button_buy.jpg);
+    background-position:0px 0px;
+}
+.button_buy_act
+{
+     background: url(images/bg_button_buy.jpg);
+    background-position:0px -40px;
+}
+#main .inner_detail
+{
+    margin-top: 10px;
+    float: right;
+    width: 766px;
+    border: 0px;
+    background: #fff;
+}
+#main .inner_detail .detail_title
+{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: url(images/bg_areas.jpg) -10px -86px no-repeat;
+}
+#main .inner_detail .detail_content
+{
+    float: left;
+    width: 100%;
+    text-indent: 2em;
+}
+/*列表页*/
+#main .list_wrapper
+{
+    float: right;
+    width: 766px;
+    min-height:300px;
+    padding: 0px;
+    border: 0px;
+}
+.list_wrapper .sort_wrapper
+{
+    margin: 0px auto;
+    width: 766px;
+    height: 28px;
+    display: block;
+    padding: 0px;
+    border-bottom: 2px solid #A60004;
+}
+.sort_wrapper .sort_title
+{
+    float: left;
+    width: 50px;
+    height: 28px;
+    display: block;
+    color: #666;
+    text-align: center;
+    font: bold 12px/28px "Microsoft Yahei" ,Verdana, "宋体";
+}
+.sort_wrapper #sort_items
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#sort_items li
+{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-right:2px;
+    display: inline;
+    background: url(images/bg_sort_item.jpg) right bottom no-repeat;
+}
+#sort_items li a
+{
+    float:left;
+    margin:0px;
+    height:14px;
+    padding: 7px 10px 7px 5px;
+    font: bold 14px/14px "Microsoft Yahei" ,Verdana, "宋体";
+    color: #930;
+    text-decoration: none;
+    background: url(images/bg_sort_item.jpg) right bottom no-repeat;
+    display:block;
+}
+#sort_items li b
+{
+    float:left;
+    width: 16px;
+    height: 28px;
+    display: none;
+    background: url(images/bg_arrow_up_down.gif) left top no-repeat;
+}
+#sort_items li span
+{
+    float: left;
+    height: 28px;
+    width: 5px;
+    display: block;
+    background: url(images/bg_sort_item.jpg) left bottom no-repeat;
+}
+#sort_items li.cur,#sort_items .cur a,#sort_items .cur span
+{
+    color: #fff;
+    background-position:right top;
+}
+#sort_items .cur span
+{
+    background-position:left top;
+}
+#sort_items .cur a
+{
+    padding-left:0px;
+}
+#sort_items .cur b
+{
+    display:block;
+}
+#sort_items .down b
+{
+    background-position:left bottom;
+}
+
+#sort_list {
+	position:relative;
+	float:left;
+	margin-top:10px;
+	display:block;
+	width:766px;
+}
+#sort_list  a {
+	color:#333;
+	text-decoration:none;
+}
+#sort_list  a:hover {
+	color:#f33;
+	text-decoration:underline;
+}
+#sort_list ul, li {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+#sort_list  li {
+	float:left;
+	display:block;
+	width:170px;
+	height:200px;
+	padding:0px 10px;
+	text-align:center;
+}
+#sort_list  a.item {
+	width:125px;
+	height:125px;
+	display:block;
+	border:1px #ccc solid;
+	margin:0px auto;
+}
+#sort_list a.item:hover {
+	width:125px;
+	height:125px;
+	display:block;
+	border:1px #F63 solid;
+	margin:0px auto;
+}
+#sort_list  a img {
+	width:125px;
+	height:125px;
+	border:0px;
+}
+#sort_list span {
+	width:125px;
+	height:22px;
+	display:block;
+	border:0px;
+	margin:0px auto;
+}

@@ -1,0 +1,33 @@
+﻿@{Layout = null;}
+<ul>
+    @foreach (var item3 in ViewBag.Hots as IQueryable<Models.Products>)
+    { <li><a href="@Url.Action("Details", "Products", new { Id = item3.Id })" target="_blank" class="item">
+                    <img src="@(new BLL.GalleryBLL().GetFirstPicture(item3.Id))"  alt="" /></a> @Html.ActionLink(item3.Name, "Details", "Products", new { Id = item3.Id }, null)
+                    <span><b class="price">@String.Format("{0:C}", item3.SalePrice)</b> <b class="price_old">@String.Format("{0:C}", item3.MarketPrice)</b></span>
+                    <span>@item3.Description.removeHtml().CutString(16)</span></li>
+    }
+</ul>
+<ul>
+    @foreach (var item4 in ViewBag.MailFree as IQueryable<Models.Products>)
+    { <li><a href="@Url.Action("Details", "Products", new { Id = item4.Id })" target="_blank" class="item">
+                    <img src="@(new BLL.GalleryBLL().GetFirstPicture(item4.Id))"  alt="" /></a> @Html.ActionLink(item4.Name, "Details", "Products", new { Id = item4.Id }, null)
+                    <span><b class="price">@String.Format("{0:C}", item4.SalePrice)</b> <b class="price_old">@String.Format("{0:C}", item4.MarketPrice)</b></span>
+                    <span>@item4.Description.removeHtml().CutString(16)</span></li>
+    }
+</ul>
+<ul>
+    @foreach (var item5 in ViewBag.Special as IQueryable<Models.Products>)
+    { <li><a href="@Url.Action("Details", "Products", new { Id = item5.Id })" target="_blank" class="item">
+                    <img src="@(new BLL.GalleryBLL().GetFirstPicture(item5.Id))"  alt="" /></a> @Html.ActionLink(item5.Name, "Details", "Products", new { Id = item5.Id }, null)
+                    <span><b class="price">@String.Format("{0:C}", item5.SalePrice)</b> <b class="price_old">@String.Format("{0:C}", item5.MarketPrice)</b></span>
+                    <span>@item5.Description.removeHtml().CutString(16)</span></li>
+    }
+</ul>
+<ul>
+    @foreach (var item6 in ViewBag.Artwork as IQueryable<Models.Products>)
+    { <li><a href="@Url.Action("Details", "Products", new { Id = item6.Id })" target="_blank" class="item">
+                    <img src="@(new BLL.GalleryBLL().GetFirstPicture(item6.Id))"  alt="" /></a> @Html.ActionLink(item6.Name, "Details", "Products", new { Id = item6.Id }, null)
+                    <span><b class="price">@String.Format("{0:C}", item6.SalePrice)</b> <b class="price_old">@String.Format("{0:C}", item6.MarketPrice)</b></span>
+                    <span>@item6.Description.removeHtml().CutString(16)</span></li>
+    }
+</ul>

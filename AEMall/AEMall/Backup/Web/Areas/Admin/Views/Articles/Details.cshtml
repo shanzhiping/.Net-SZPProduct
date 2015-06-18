@@ -1,0 +1,60 @@
+﻿@model Models.Articles
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.CreateTime)
+            </th>
+            <td>
+                @String.Format("{0:yyyy-MM-dd HH:mm:ss}", Model.CreateTime)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.VoidTime)
+            </th>
+            <td>
+                @String.Format("{0:yyyy-MM-dd HH:mm:ss}", Model.VoidTime)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.GenreId)
+            </th>
+            <td>
+                @Model.Genres.Name
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.UserId)
+            </th>
+            <td>
+                @Model.Users.Name
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Content)
+            </th>
+            <td>
+                @Html.Raw(Model.Content)
+            </td>
+        </tr>
+    </table>
+</fieldset>

@@ -1,0 +1,30 @@
+﻿@model Models.UserRanks
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Sequence)
+            </th>
+            <td>
+                @Model.Sequence
+            </td>
+		</tr>
+    </table>
+</fieldset>
+

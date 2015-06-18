@@ -1,0 +1,19 @@
+﻿<div style="float: left;margin:0px; padding:0px;">
+    <textarea id="@ViewData.ModelMetadata.PropertyName" name="@ViewData.ModelMetadata.PropertyName">
+@Model
+</textarea>
+    <script type="text/javascript">
+     if (CKEDITOR.instances['@ViewData.ModelMetadata.PropertyName'])
+     {
+        CKEDITOR.remove(CKEDITOR.instances['@ViewData.ModelMetadata.PropertyName']);
+     }
+
+     CKEDITOR.replace('@ViewData.ModelMetadata.PropertyName');
+
+    $(document).ready(function () {
+    $("input:submit").click(function(){
+        $("#@ViewData.ModelMetadata.PropertyName").val(CKEDITOR.instances.@(@ViewData.ModelMetadata.PropertyName).getData());  
+        });
+    });
+    </script>
+</div>

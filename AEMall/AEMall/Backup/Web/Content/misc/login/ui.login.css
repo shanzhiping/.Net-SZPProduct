@@ -1,0 +1,171 @@
+﻿/*
+基本样式表
+Designed by Hooper @ heejaa.com
+© All Rights Reserved
+*/
+
+html,body {
+	margin:0px auto;
+	width: 100%;
+	height:100%;
+	background: #2248A2;
+}
+/*全局容器*/
+#main_wrapper {
+	position:relative;
+	margin:0px auto;
+	width:778px;
+	height:100%;
+	vertical-align:middle;
+}
+#main_wrapper #login_wrapper {	
+	position: absolute; 
+	top: 60px;
+	width:100%;
+	height:426px;
+	background:url(images/bg_login.jpg) no-repeat;
+}
+#login_wrapper form {	
+	position: absolute; 
+	top: 150px;
+	left:15px;
+	width:240px;
+	height:194px;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+form span.txt, span.check, span.button 	
+{
+	width:220px;
+	height:30px;
+	display:block;
+}
+form input {	
+	border:0px;
+}
+form input.text 
+{
+    margin-left:60px;		
+    *margin-left:55px;		
+	width:140px;
+	height:20px;
+	color:#555;
+	font:bold 12px/20px verdana;
+	float:left;	
+}
+form input.auth
+{
+    ime-mode:disabled;
+    margin-left:60px;		
+    *margin-left:55px;		
+	width:65px;
+	height:20px;
+	color:#555;
+	font:bold 14px/20px verdana;
+	float:left;	
+	text-align:center;
+}
+form input.empty 
+{
+	background:url(images/bg_auth.jpg) center center;
+}
+form span>span
+{
+    width:5px;
+    height:20px;
+    line-height:20px;
+    vertical-align:middle;
+    display:inline-block;
+    float:left;
+    }
+form span.txt 		
+{
+    margin:10px 0px 0px 10px;
+	*margin:8px 0px 0px 10px;
+	text-align:right;
+	display:inline-block;
+}
+form span.check {		
+	margin:0px 0px 0px 10px;
+	width:160px;
+	padding-left:56px;
+}
+form span.button {		
+	margin:0px 0px 0px 10px;
+}
+form label {	
+	font:bold 12px/23px verdana;
+	color:#FFF;
+}
+form .submit {
+	background:url(images/bg_buttons.jpg) 0 0 no-repeat;
+	margin-left:40px;
+	*margin-left:30px;
+	width:75px;
+	height:27px;
+	cursor:pointer;
+}
+form .reset {
+	background:url(images/bg_buttons.jpg) 0 -33px no-repeat;
+	width:75px;
+	height:27px;
+	cursor:pointer;
+}
+#login_wrapper #copyright {	
+	position: absolute; 
+	top: 336px;
+	left:15px;
+	width:250px;
+	height:70px;
+	margin:5px 0px 0px 3px;
+	padding:0px;
+	font:normal 12px/23px verdana;
+	color:#fff;
+	text-align:center;
+}
+#login_wrapper #datentime {	
+	position: absolute; 
+	top: 242px;
+	left:274px;
+	width:494px;
+	height:24px;
+	background-color:#FFF;
+	text-align:center;
+	vertical-align:baseline;
+	line-height:24px;
+	font:bold 12px/23px verdana;
+	color: #005BA1;
+	zoom:1;
+}
+a{
+	font:bold 12px verdana;
+	color:#fff;
+	text-decoration:none;
+}
+a:hover{
+	font:bold 12px verdana;
+	color:#fff;
+	text-decoration:underline;
+}
+
+.validation-summary-errors {	
+	position: absolute; 
+	text-align:right;
+	top: -42px;
+	*top: -30px;
+	width:250px;
+	height:20px;
+	z-index:100;
+	font-size:12px;
+	color:#ff0;
+	font-weight:bold;
+}
+.field-validation-error
+{
+    color: #ff0;
+}
+.validation-summary-errors ul
+{
+    list-style-type:none;
+}

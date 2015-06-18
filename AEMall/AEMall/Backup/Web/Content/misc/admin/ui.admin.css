@@ -1,0 +1,38 @@
+﻿.plus
+{
+    width:12px;
+    height:18px;
+    display:inline-block;
+    background:url(images/bg_plus.gif) center center no-repeat;
+    text-indent:-9999px;
+    }
+.minus
+{
+    background:url(images/bg_minus.gif)  center center no-repeat;
+}
+.subcat
+{
+    display:none;
+    }
+    #footer a
+{
+    text-decoration:none;
+    }
+#footer a:hover
+{
+    text-decoration:underline;
+    color:#900;
+}
+.field-validation-error
+{
+    color: #ff0000;
+    height: 18px;
+    width: auto;
+    background: yellow;
+    margin: 0px;
+    margin-left: 2px;
+    padding: 3px;
+    line-height: 18px;
+    border: #c00 solid 1px;
+    display:inline-block;
+}

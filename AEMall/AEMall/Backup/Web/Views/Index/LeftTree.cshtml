@@ -1,0 +1,8 @@
+﻿@model IQueryable<Models.ProductTypes>
+@{ Layout = null;}
+@{
+    foreach (var item in Model)
+    {
+    <li><span class="title">@Html.ActionLink(item.Name, "Type", "Products", new { id = item.Id }, null)</span><span class="subTitle">@item.Description</span> </li>
+    }   
+}

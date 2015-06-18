@@ -1,0 +1,53 @@
+﻿@model PagedList<Models.Logs>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Search");}
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+    <thead>
+        <tr>
+            <th>
+                简介
+            </th>
+            <th>
+                内容
+            </th>
+            <th>
+                创建时间
+            </th>
+            <th>
+                来源IP
+            </th>
+            <th>
+                涉及用户
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @Html.Raw(item.Content)
+                </td>
+                <td class="center">
+                     @String.Format("{0:yyyy-MM-dd HH:mm:ss}", item.CreateTime)
+                </td>
+                <td>
+                    @item.IP
+                </td>
+                <td>
+                    @(item.UserId.HasValue? item.Users.Name:"")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.Raw(Ajax.MikePager(Model))

@@ -1,0 +1,178 @@
+﻿#main_wrapper #main
+{
+    margin: 0px auto;
+    width: 838px;
+    height: 260px;
+    padding: 60px 80px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+#main #main_welcome
+{
+    float: left;
+    width: 360px;
+    height: 269px;
+    margin: 0px;
+    display: block;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(153, 51, 0, 1);
+    background: url(images/bg_welcome.jpg) no-repeat;
+    overflow: hidden;
+}
+#main #main_login
+{
+    float: left;
+    width: 420px;
+    height: 310px;
+    margin-left: 50px;
+    display: block;
+    border: 0px;
+    background: #fff url(images/bg_login.jpg) no-repeat;
+    overflow: hidden;
+}
+#main_login form
+{
+    margin: 0px auto;
+    position: relative;
+    height: 270px;
+    width: 420px;
+    padding: 0px;
+}
+#main_login form #Name
+{
+    position: absolute;
+    left: 130px;
+    top: 80px;
+    height: 23px;
+    width: 190px;
+    border: 1px solid #ccc;
+    background: url(images/bg_input.jpg) no-repeat;
+    font: bold 14px/23px Verdana;
+    text-indent: 3px;
+    color: #666;
+}
+#main_login form #Password
+{
+    position: absolute;
+    left: 130px;
+    top: 130px;
+    height: 23px;
+    width: 190px;
+    border: 1px solid #ccc;
+    background: url(images/bg_input.jpg) no-repeat;
+    font: bold 14px/23px Verdana;
+    text-indent: 3px;
+    color: #666;
+}
+#main_login form .validmsg
+{
+    position: absolute;
+    left: 130px;
+    height: 20px;
+    width: 200px;
+    font: normal 12px/20px Verdana;
+    color: #aaa;
+    text-indent: 5px;
+    display: none;
+}
+#main_login form .validation-summary-errors
+{
+    position:absolute;
+    margin:0px;
+    padding:0px;
+    left: 230px;
+    top: 216px;
+    color: #c00;
+    font: bold 14px/20px "宋体" , Verdana;
+}
+#main_login form .validation-summary-errors ul, li
+{    
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+#main_login form #val_user
+{
+    top: 108px;
+}
+#main_login form #val_pass
+{
+    top: 158px;
+}
+#main_login form #val_auto
+{
+    text-indent: 0px;
+    top: 182px;
+    display: block;
+    cursor: pointer;
+}
+#val_auto input
+{
+    position: absolute;
+    margin-top: 3px;    
+	*margin-top:-2px;
+    padding: 0px;
+    vertical-align: middle;
+}
+#val_auto b
+{
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+    position: absolute;
+    left: 15px;
+    width: 100px;
+    height: 20px;
+    font: normal 12px/20px Verdana;
+    display: block;
+    vertical-align: middle;
+}
+#main_login form a.login_new
+{
+    position: absolute;
+    display: block;
+    left: 316px;
+    top: 10px;
+    height: 32px;
+    width: 92px;
+    border: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(images/bg_button_login.jpg) 0px -96px no-repeat;
+}
+#main_login form a.login_new:hover
+{
+    position: absolute;
+    display: block;
+    left: 316px;
+    top: 10px;
+    height: 32px;
+    width: 92px;
+    border: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(images/bg_button_login.jpg) 0px -64px no-repeat;
+}
+
+#main_login form #login_submit
+{
+    position: absolute;
+    display: block;
+    left: 130px;
+    top: 210px;
+    height: 32px;
+    width: 92px;
+    border: 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#main_login form .sub_static
+{
+    background: url(images/bg_button_login.jpg) 0px 0px no-repeat;
+}
+#main_login form .sub_hover
+{
+    background: url(images/bg_button_login.jpg) 0px -32px no-repeat;
+}

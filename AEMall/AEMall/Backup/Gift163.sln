@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{A5367E5F-B032-4402-BAEF-DD4B09B7CC57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{F61471CB-6576-4C4B-83E9-3536B8995FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Providers", "Providers\Providers.csproj", "{A6E06189-A4CD-4542-B5FE-CF3CFA1FD2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{6AC68B81-64E8-424D-B365-0E9603A78BD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF Cache Tracing", "EF Cache Tracing", "{B43AEB6E-94F4-435F-925E-D576EF3C6D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCachingProvider", "EFCachingProvider\EFCachingProvider.csproj", "{E9B10F80-134F-4DC1-BA6F-7728EF2CAE58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCachingProvider.Web", "EFCachingProvider.Web\EFCachingProvider.Web.csproj", "{5E373803-C182-47CF-AA62-254BD4CECE32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFProviderWrapperToolkit", "EFProviderWrapperToolkit\EFProviderWrapperToolkit.csproj", "{BAF62DE6-51D0-49AB-9E4E-9240E85E9C35}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsc:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BLL\\BLL.csproj
+		SccProjectName1 = BLL
+		SccLocalPath1 = BLL
+		SccProjectUniqueName2 = Models\\Models.csproj
+		SccProjectName2 = Models
+		SccLocalPath2 = Models
+		SccProjectUniqueName3 = Providers\\Providers.csproj
+		SccProjectName3 = Providers
+		SccLocalPath3 = Providers
+		SccProjectUniqueName4 = Web\\Web.csproj
+		SccProjectName4 = Web
+		SccLocalPath4 = Web
+		SccProjectUniqueName5 = EFCachingProvider\\EFCachingProvider.csproj
+		SccProjectTopLevelParentUniqueName5 = Gift163.sln
+		SccProjectName5 = EFCachingProvider
+		SccLocalPath5 = EFCachingProvider
+		SccProjectUniqueName6 = EFCachingProvider.Web\\EFCachingProvider.Web.csproj
+		SccProjectTopLevelParentUniqueName6 = Gift163.sln
+		SccProjectName6 = EFCachingProvider.Web
+		SccLocalPath6 = EFCachingProvider.Web
+		SccProjectUniqueName7 = EFProviderWrapperToolkit\\EFProviderWrapperToolkit.csproj
+		SccProjectTopLevelParentUniqueName7 = Gift163.sln
+		SccProjectName7 = EFProviderWrapperToolkit
+		SccLocalPath7 = EFProviderWrapperToolkit
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5367E5F-B032-4402-BAEF-DD4B09B7CC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5367E5F-B032-4402-BAEF-DD4B09B7CC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5367E5F-B032-4402-BAEF-DD4B09B7CC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5367E5F-B032-4402-BAEF-DD4B09B7CC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61471CB-6576-4C4B-83E9-3536B8995FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61471CB-6576-4C4B-83E9-3536B8995FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61471CB-6576-4C4B-83E9-3536B8995FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61471CB-6576-4C4B-83E9-3536B8995FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6E06189-A4CD-4542-B5FE-CF3CFA1FD2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E06189-A4CD-4542-B5FE-CF3CFA1FD2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E06189-A4CD-4542-B5FE-CF3CFA1FD2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E06189-A4CD-4542-B5FE-CF3CFA1FD2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC68B81-64E8-424D-B365-0E9603A78BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC68B81-64E8-424D-B365-0E9603A78BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC68B81-64E8-424D-B365-0E9603A78BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC68B81-64E8-424D-B365-0E9603A78BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9B10F80-134F-4DC1-BA6F-7728EF2CAE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B10F80-134F-4DC1-BA6F-7728EF2CAE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B10F80-134F-4DC1-BA6F-7728EF2CAE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B10F80-134F-4DC1-BA6F-7728EF2CAE58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E373803-C182-47CF-AA62-254BD4CECE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E373803-C182-47CF-AA62-254BD4CECE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E373803-C182-47CF-AA62-254BD4CECE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E373803-C182-47CF-AA62-254BD4CECE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF62DE6-51D0-49AB-9E4E-9240E85E9C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF62DE6-51D0-49AB-9E4E-9240E85E9C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF62DE6-51D0-49AB-9E4E-9240E85E9C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF62DE6-51D0-49AB-9E4E-9240E85E9C35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9B10F80-134F-4DC1-BA6F-7728EF2CAE58} = {B43AEB6E-94F4-435F-925E-D576EF3C6D58}
+		{5E373803-C182-47CF-AA62-254BD4CECE32} = {B43AEB6E-94F4-435F-925E-D576EF3C6D58}
+		{BAF62DE6-51D0-49AB-9E4E-9240E85E9C35} = {B43AEB6E-94F4-435F-925E-D576EF3C6D58}
+	EndGlobalSection
+EndGlobal

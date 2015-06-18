@@ -1,0 +1,14 @@
+﻿@if (Request.IsAuthenticated)
+{
+    @(new BLL.UsersBLL().GetName(Guid.Parse(Context.User.Identity.Name)))
+    @("，欢迎来到物华天宝网！") 
+    @Html.ActionLink("[退出]", "LogOff", "Account", null, new { @class = "logout" })
+    @("，新用户？") 
+    @Html.ActionLink("[免费注册]", "Reg", "Account", null, new { @class = "reg" })
+}
+else
+{@("您好，欢迎来到物华天宝网！") 
+    @Html.ActionLink("[请登录]", "LogOn", "Account", null, new { @class = "login" })
+    @("，新用户？")     
+    @Html.ActionLink("[免费注册]", "Reg", "Account", null, new { @class = "reg" })
+}

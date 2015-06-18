@@ -1,0 +1,95 @@
+﻿@model Models.Products
+@{
+    ViewBag.Title = "产品查看";
+    ViewBag.CssSelf = @Url.Content("~/Content/themes/shine/ui.shine.inner.css");
+    ViewBag.JsSelf = @Url.Content("~/Scripts/jquery.start.details.js");
+}
+<div id="location">
+    @Html.ActionLink("首页", "Index", "Index")@Html.ActionLink("商品列表", "Index", "Products", null, new { @class = "child" })<a
+        href="javascript:void(0);" class="child">商品查看</a>
+</div>
+<div id="main">
+    <div class="inner_left">
+        <span class="left_title">◊ 相关分类</span>
+        <div class="left_content">
+            相关分类
+        </div>
+    </div>
+    <div class="inner_right" style="height: 402px !important; height: 392px">
+        <span class="right_title"><b>商品名称：</b>@Model.Name</span>
+        <ul class="right_img" id="img_zone">
+                @foreach (var item in new BLL.GalleryBLL().GetByProductId(Model.Id) as IQueryable<Models.Gallery>)
+                    {
+                        <li id="@item.Id"><a href="@item.Url.Replace("Published", "Original")" class = 'cloud-zoom' rel="tint: '#CCC',tintOpacity:0.7, position:'left',smoothMove:5,zoomWidth:440, adjustY:-2, adjustX:-10, showTitle: false">
+                            <img src="@item.Url" alt="" /></a></li>
+                    }
+        </ul>
+        <table id="product_detail" cellpadding="0" cellspacing="0">
+            <tr>
+                <th>
+                    <b>原价：</b>@String.Format("￥{0:F}", Model.MarketPrice)
+                </th>
+                <td rowspan="6">
+                    @String.Format("￥{0:F}", Model.SalePrice) 
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>折扣：</b>@String.Format("{0:F0}%", Model.Discount)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <b>节省：</b>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <b>重量：</b>@String.Format("{0:F}", Model.Weight) Kg
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <b>已售：</b>@Model.SoldCount
+                    
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <b>所在地区：</b>@Model.Regions.Name
+                </th>
+            </tr>
+        </table>
+        <div class="right_buy_top">
+            <span>我要买：</span><a href="javascript:void(0);" onclick="SetNum(0);">-</a><input type="text"
+                id="num" readonly="readonly" value="1" /><a href="javascript:void(0);" onclick="SetNum(1);">+</a><span>&nbsp;&nbsp;件
+                    （库存<b>@Model.Stock</b>件）</span></div>
+        <div class="right_buy_bottom">
+            <input type="button" id="buy" value="加入购物车" class="button_buy_static" /></div>
+        <div class="right_img_list">
+            <a href="javascript:void(0);" class="img_nav_button" id="img_nav_left">上翻</a>
+            <div id="img_list_box">
+                <ul id="img_list">
+                    @foreach (var item in new BLL.GalleryBLL().GetByProductId(Model.Id) as IQueryable<Models.Gallery>)
+                    {
+                        <li><a href="javascript:void(0);">
+                            <img src="@item.ThumbnailsUrl" alt="" class="@item.Id" /></a></li>
+                    }
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="img_nav_button" id="img_nav_right">下翻</a>
+        </div>
+    </div>
+    <div class="area_right" style="margin-top: 10px;">
+        <span class="area_right_title">◊ 畅销榜</span>
+        @{Html.RenderAction("RankList", "Products");}
+    </div>
+    <div class="inner_detail">
+        <span class="detail_title"></span>
+        <div class="detail_content">
+            @Html.Raw(Model.Description)
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>

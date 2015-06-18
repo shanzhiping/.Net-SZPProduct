@@ -1,0 +1,94 @@
+﻿@model PagedList<Models.Statistics>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+
+    @{Html.RenderPartial("Button_Search");}
+
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+        <thead>
+            <tr>
+				<th>
+					简述
+				</th>
+
+				<th>
+					创建时期
+				</th>
+
+				<th>
+					用户数
+				</th>
+
+				<th>
+					顾客数
+				</th>
+
+				<th>
+					商品数
+				</th>
+
+				<th>
+					订单数
+				</th>
+
+				<th>
+					近24小时注册人数
+				</th>
+
+				<th>
+					最新注册顾客
+				</th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+					<td>
+						@item.Name
+					</td>
+
+					<td>
+						@item.CreateTime
+					</td>
+
+					<td>
+						@item.TotalUsers
+					</td>
+
+					<td>
+						@item.TotalCustomers
+					</td>
+
+					<td>
+						@item.TotalProducts
+					</td>
+
+					<td>
+						@item.TotalOrders
+					</td>
+
+					<td>
+						@item.NewUserInPast24Hrs
+					</td>
+
+					<td>
+						@item.NewestUserId
+					</td>
+                    <td class="center operation">
+                        @{Html.RenderPartial("Link_Operations",item);}
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+	@Html.Raw(Ajax.MikePager(Model))

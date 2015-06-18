@@ -1,0 +1,9 @@
+﻿@model IQueryable<Models.Articles>
+@{ Layout = null;}
+<div id="misc_link">
+@foreach (var item in Model.Where(a => a.Genres.Name.Equals("其它综合")) as IQueryable<Models.Articles>)
+{
+    @Html.ActionLink(item.Name.CutString(15), "Details", "Articles", new { id = item.Id }, null)@(" | ")
+}</div>
+
+@ViewBag.Beian @ViewBag.Address  Copyright &copy;@ViewBag.Founded <a href="@ViewBag.Url">@ViewBag.SysName</a>  版权所有 

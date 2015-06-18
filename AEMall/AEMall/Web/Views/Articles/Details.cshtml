@@ -1,0 +1,28 @@
+﻿@model Models.Articles
+@{
+    ViewBag.Title = "文章查看";
+    ViewBag.CssSelf = @Url.Content("~/Content/themes/shine/ui.shine.inner.css");
+    ViewBag.JsSelf = @Url.Content("~/Scripts/jquery.start.inner.js");
+}
+<div id="location">
+    @Html.ActionLink("首页", "Index", "Index")@Html.ActionLink("文章查看", "Index", "Product", null, new { @class = "child" })
+</div>
+<div id="main">
+    <div class="inner_left">
+        <span class="left_title">◊ 相关分类</span>
+        <div class="left_content">
+            相关分类
+        </div>
+    </div>
+    <div class="inner_right">
+        <h1 class="article_title">@Model.Name</h1>
+        <h2 class="article_title_sub">时间：@String.Format("{0:yyyy-MM-dd HH:mm:ss}", Model.CreateTime)</h2>
+        <div class="article_content">@Html.Raw(Model.Content)</div>
+    </div>
+    <div class="area_right" style="margin-top: 10px;">
+        <span class="area_right_title">◊ 畅销榜</span>
+        @{Html.RenderAction("RankList", "Products");}
+    </div>
+    <div class="clear">
+    </div>
+</div>

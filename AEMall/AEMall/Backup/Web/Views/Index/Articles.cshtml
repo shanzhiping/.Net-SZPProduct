@@ -1,0 +1,20 @@
+﻿@model IQueryable<Models.Articles>
+@{ Layout = null;}
+<div>
+    <ul>
+        @foreach (var item1 in Model.Where(a => a.Genres.Name.Equals("促销活动")).Take(6) as IQueryable<Models.Articles>)
+        {
+            <li><a href="." target="_blank">@item1.Name.CutString(25)</a></li>
+        }
+    </ul>
+    <span><a href=".">查看更多>></a></span>
+</div>
+<div>
+    <ul>
+        @foreach (var item2 in Model.Where(a => a.Genres.Name.Equals("天宝动态")).Take(6) as IQueryable<Models.Articles>)
+        {
+            <li><a href="." target="_blank">@item2.Name.CutString(25)</a></li>
+        }
+    </ul>
+    <span><a href=".">查看更多>></a></span>
+</div>

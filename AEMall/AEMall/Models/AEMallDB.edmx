@@ -1,0 +1,1925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Gift163DBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="Gift163DBModelStoreContainer">
+          <EntitySet Name="Articles" EntityType="Gift163DBModel.Store.Articles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Configs" EntityType="Gift163DBModel.Store.Configs" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Gallery" EntityType="Gift163DBModel.Store.Gallery" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Genres" EntityType="Gift163DBModel.Store.Genres" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Logs" EntityType="Gift163DBModel.Store.Logs" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OrderItems" EntityType="Gift163DBModel.Store.OrderItems" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Orders" EntityType="Gift163DBModel.Store.Orders" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PaymentModes" EntityType="Gift163DBModel.Store.PaymentModes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Pictures" EntityType="Gift163DBModel.Store.Pictures" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Products" EntityType="Gift163DBModel.Store.Products" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProductsInTypes" EntityType="Gift163DBModel.Store.ProductsInTypes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProductsToRegions" EntityType="Gift163DBModel.Store.ProductsToRegions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProductTypes" EntityType="Gift163DBModel.Store.ProductTypes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Regions" EntityType="Gift163DBModel.Store.Regions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Roles" EntityType="Gift163DBModel.Store.Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ShippingAddress" EntityType="Gift163DBModel.Store.ShippingAddress" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ShoppingCart" EntityType="Gift163DBModel.Store.ShoppingCart" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Statistics" EntityType="Gift163DBModel.Store.Statistics" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserProfile" EntityType="Gift163DBModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserRanks" EntityType="Gift163DBModel.Store.UserRanks" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Users" EntityType="Gift163DBModel.Store.Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UsersInRoles" EntityType="Gift163DBModel.Store.UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_ARTICLES_REFERENCE_GENRES" Association="Gift163DBModel.Store.FK_ARTICLES_REFERENCE_GENRES">
+            <End Role="Genres" EntitySet="Genres" />
+            <End Role="Articles" EntitySet="Articles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ARTICLES_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_ARTICLES_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Articles" EntitySet="Articles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GALLERY_REFERENCE_PRODUCTS" Association="Gift163DBModel.Store.FK_GALLERY_REFERENCE_PRODUCTS">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Gallery" EntitySet="Gallery" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GENRES_REFERENCE_GENRES" Association="Gift163DBModel.Store.FK_GENRES_REFERENCE_GENRES">
+            <End Role="Genres" EntitySet="Genres" />
+            <End Role="Genres1" EntitySet="Genres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LOGS_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_LOGS_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Logs" EntitySet="Logs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDERITE_REFERENCE_ORDERS" Association="Gift163DBModel.Store.FK_ORDERITE_REFERENCE_ORDERS">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="OrderItems" EntitySet="OrderItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDERITE_REFERENCE_PRODUCTS" Association="Gift163DBModel.Store.FK_ORDERITE_REFERENCE_PRODUCTS">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="OrderItems" EntitySet="OrderItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDERS_REFERENCE_PAYMENTM" Association="Gift163DBModel.Store.FK_ORDERS_REFERENCE_PAYMENTM">
+            <End Role="PaymentModes" EntitySet="PaymentModes" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDERS_REFERENCE_USER1" Association="Gift163DBModel.Store.FK_ORDERS_REFERENCE_USER1">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PICTURES_REFERENCE_ARTICLES" Association="Gift163DBModel.Store.FK_PICTURES_REFERENCE_ARTICLES">
+            <End Role="Articles" EntitySet="Articles" />
+            <End Role="Pictures" EntitySet="Pictures" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCT3" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_PRODUCT3">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductsToRegions" EntitySet="ProductsToRegions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCTS" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_PRODUCTS">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductsInTypes" EntitySet="ProductsInTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCTT" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_PRODUCTT">
+            <End Role="ProductTypes" EntitySet="ProductTypes" />
+            <End Role="ProductsInTypes" EntitySet="ProductsInTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_REGION1" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_REGION1">
+            <End Role="Regions" EntitySet="Regions" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_REGIONS" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_REGIONS">
+            <End Role="Regions" EntitySet="Regions" />
+            <End Role="ProductsToRegions" EntitySet="ProductsToRegions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_PRODUCTS_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTT_REFERENCE_PRODUCTT" Association="Gift163DBModel.Store.FK_PRODUCTT_REFERENCE_PRODUCTT">
+            <End Role="ProductTypes" EntitySet="ProductTypes" />
+            <End Role="ProductTypes1" EntitySet="ProductTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REGIONS_REFERENCE_REGIONS" Association="Gift163DBModel.Store.FK_REGIONS_REFERENCE_REGIONS">
+            <End Role="Regions" EntitySet="Regions" />
+            <End Role="Regions1" EntitySet="Regions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHIPPING_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_SHIPPING_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="ShippingAddress" EntitySet="ShippingAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHOPPING_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_SHOPPING_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="ShoppingCart" EntitySet="ShoppingCart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_STATISTI_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_STATISTI_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERPROF_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_USERPROF_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERS_REFERENCE_REGIONS" Association="Gift163DBModel.Store.FK_USERS_REFERENCE_REGIONS">
+            <End Role="Regions" EntitySet="Regions" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERS_REFERENCE_USERRANK" Association="Gift163DBModel.Store.FK_USERS_REFERENCE_USERRANK">
+            <End Role="UserRanks" EntitySet="UserRanks" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERSINR_REFERENCE_ROLES" Association="Gift163DBModel.Store.FK_USERSINR_REFERENCE_ROLES">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="UsersInRoles" EntitySet="UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERSINR_REFERENCE_USERS" Association="Gift163DBModel.Store.FK_USERSINR_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UsersInRoles" EntitySet="UsersInRoles" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Articles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="VoidTime" Type="datetime" />
+          <Property Name="Url" Type="nvarchar" MaxLength="255" />
+          <Property Name="GenreId" Type="uniqueidentifier" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Configs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="IsValid" Type="bit" />
+          <Property Name="Content" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Gallery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="ProductId" Type="uniqueidentifier" />
+          <Property Name="ThumbnailsUrl" Type="nvarchar" MaxLength="255" />
+          <Property Name="Url" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Genres">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="Sequence" Type="int" />
+          <Property Name="ParentId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Logs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="OrderItems">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="OrderId" Type="uniqueidentifier" />
+          <Property Name="ProductId" Type="uniqueidentifier" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="ThumbUrl" Type="nvarchar" MaxLength="255" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="RealName" Type="nvarchar" MaxLength="20" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="ShippingRegion" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address" Type="nvarchar" MaxLength="255" />
+          <Property Name="PostCode" Type="nvarchar" MaxLength="20" />
+          <Property Name="Mobil" Type="nvarchar" MaxLength="20" />
+          <Property Name="Tel" Type="nvarchar" MaxLength="20" />
+          <Property Name="PaymentModeId" Type="uniqueidentifier" />
+          <Property Name="PaymentGateway" Type="nvarchar" MaxLength="20" />
+          <Property Name="IsPaid" Type="bit" />
+          <Property Name="Freight" Type="money" />
+          <Property Name="Weight" Type="decimal" />
+          <Property Name="CostPrice" Type="money" />
+          <Property Name="ShipOrderNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="IsPOD" Type="bit" />
+          <Property Name="Total" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="PaymentModes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="MerchantCode" Type="nvarchar" MaxLength="255" />
+          <Property Name="Email" Type="nvarchar" MaxLength="255" />
+          <Property Name="SecretKey" Type="nvarchar" />
+          <Property Name="SecondKey" Type="nvarchar" />
+          <Property Name="Password" Type="nvarchar" />
+          <Property Name="Partner" Type="nvarchar" MaxLength="255" />
+          <Property Name="Gateway" Type="nvarchar" MaxLength="255" />
+          <Property Name="Sequence" Type="int" />
+          <Property Name="Charge" Type="money" />
+          <Property Name="IsPercent" Type="bit" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Pictures">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="ArticleId" Type="uniqueidentifier" />
+          <Property Name="ThumbnailsUrl" Type="nvarchar" MaxLength="255" />
+          <Property Name="Url" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="SKU" Type="nvarchar" MaxLength="50" />
+          <Property Name="RegionId" Type="uniqueidentifier" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Weight" Type="decimal" Precision="6" Scale="3" />
+          <Property Name="Keywords" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsRecommended" Type="bit" />
+          <Property Name="SalePrice" Type="money" />
+          <Property Name="MarketPrice" Type="money" />
+          <Property Name="SoldCount" Type="int" />
+          <Property Name="Discount" Type="decimal" />
+          <Property Name="Latitude" Type="decimal" Scale="6" />
+          <Property Name="Longitude" Type="decimal" Scale="6" />
+          <Property Name="Stock" Type="int" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="VistiCounts" Type="int" />
+          <Property Name="SuperId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="ProductsInTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductId" Type="uniqueidentifier" />
+          <Property Name="TypeId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="ProductsToRegions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="ProductId" Type="uniqueidentifier" />
+          <Property Name="RegionId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="ProductTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sequence" Type="int" />
+          <Property Name="ParentId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Regions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sequence" Type="int" />
+          <Property Name="ParentId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="Sequence" Type="int" />
+        </EntityType>
+        <EntityType Name="ShippingAddress">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="Mobil" Type="nvarchar" MaxLength="20" />
+          <Property Name="Tel" Type="nvarchar" MaxLength="20" />
+          <Property Name="Address" Type="nvarchar" MaxLength="255" />
+          <Property Name="PostCode" Type="nvarchar" MaxLength="20" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="IsDefault" Type="bit" />
+        </EntityType>
+        <EntityType Name="ShoppingCart">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductId" Type="uniqueidentifier" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Statistics">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="TotalUsers" Type="int" />
+          <Property Name="TotalCustomers" Type="int" />
+          <Property Name="TotalProducts" Type="int" />
+          <Property Name="TotalOrders" Type="int" />
+          <Property Name="NewUserInPast24Hrs" Type="int" />
+          <Property Name="NewestUserId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="Gender" Type="bit" />
+          <Property Name="Avatar" Type="nvarchar" MaxLength="255" />
+          <Property Name="TotalOrder" Type="int" />
+          <Property Name="QQ" Type="nvarchar" MaxLength="20" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="UserRanks">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="Sequence" Type="int" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="Password" Type="nvarchar" MaxLength="32" />
+          <Property Name="RealName" Type="nvarchar" MaxLength="50" />
+          <Property Name="RankId" Type="uniqueidentifier" />
+          <Property Name="IsPower" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="RegionId" Type="uniqueidentifier" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mobil" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="UsersInRoles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="RoleId" Type="uniqueidentifier" />
+        </EntityType>
+        <Association Name="FK_ARTICLES_REFERENCE_GENRES">
+          <End Role="Genres" Type="Gift163DBModel.Store.Genres" Multiplicity="0..1" />
+          <End Role="Articles" Type="Gift163DBModel.Store.Articles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genres">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Articles">
+              <PropertyRef Name="GenreId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ARTICLES_REFERENCE_USERS">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="Articles" Type="Gift163DBModel.Store.Articles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Articles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GALLERY_REFERENCE_PRODUCTS">
+          <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="0..1" />
+          <End Role="Gallery" Type="Gift163DBModel.Store.Gallery" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Gallery">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GENRES_REFERENCE_GENRES">
+          <End Role="Genres" Type="Gift163DBModel.Store.Genres" Multiplicity="0..1" />
+          <End Role="Genres1" Type="Gift163DBModel.Store.Genres" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genres">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Genres1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LOGS_REFERENCE_USERS">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="Logs" Type="Gift163DBModel.Store.Logs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Logs">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDERITE_REFERENCE_ORDERS">
+          <End Role="Orders" Type="Gift163DBModel.Store.Orders" Multiplicity="0..1" />
+          <End Role="OrderItems" Type="Gift163DBModel.Store.OrderItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderItems">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDERITE_REFERENCE_PRODUCTS">
+          <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="0..1" />
+          <End Role="OrderItems" Type="Gift163DBModel.Store.OrderItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderItems">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDERS_REFERENCE_PAYMENTM">
+          <End Role="PaymentModes" Type="Gift163DBModel.Store.PaymentModes" Multiplicity="0..1" />
+          <End Role="Orders" Type="Gift163DBModel.Store.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PaymentModes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="PaymentModeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDERS_REFERENCE_USER1">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="Orders" Type="Gift163DBModel.Store.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PICTURES_REFERENCE_ARTICLES">
+          <End Role="Articles" Type="Gift163DBModel.Store.Articles" Multiplicity="0..1" />
+          <End Role="Pictures" Type="Gift163DBModel.Store.Pictures" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Articles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pictures">
+              <PropertyRef Name="ArticleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_PRODUCT3">
+          <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="0..1" />
+          <End Role="ProductsToRegions" Type="Gift163DBModel.Store.ProductsToRegions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductsToRegions">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_PRODUCTS">
+          <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="0..1" />
+          <End Role="ProductsInTypes" Type="Gift163DBModel.Store.ProductsInTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductsInTypes">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_PRODUCTT">
+          <End Role="ProductTypes" Type="Gift163DBModel.Store.ProductTypes" Multiplicity="0..1" />
+          <End Role="ProductsInTypes" Type="Gift163DBModel.Store.ProductsInTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductsInTypes">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_REGION1">
+          <End Role="Regions" Type="Gift163DBModel.Store.Regions" Multiplicity="0..1" />
+          <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Regions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_REGIONS">
+          <End Role="Regions" Type="Gift163DBModel.Store.Regions" Multiplicity="0..1" />
+          <End Role="ProductsToRegions" Type="Gift163DBModel.Store.ProductsToRegions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Regions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductsToRegions">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_USERS">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="Products" Type="Gift163DBModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="SuperId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTT_REFERENCE_PRODUCTT">
+          <End Role="ProductTypes" Type="Gift163DBModel.Store.ProductTypes" Multiplicity="0..1" />
+          <End Role="ProductTypes1" Type="Gift163DBModel.Store.ProductTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductTypes1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REGIONS_REFERENCE_REGIONS">
+          <End Role="Regions" Type="Gift163DBModel.Store.Regions" Multiplicity="0..1" />
+          <End Role="Regions1" Type="Gift163DBModel.Store.Regions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Regions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Regions1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHIPPING_REFERENCE_USERS">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="ShippingAddress" Type="Gift163DBModel.Store.ShippingAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShippingAddress">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHOPPING_REFERENCE_USERS">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="ShoppingCart" Type="Gift163DBModel.Store.ShoppingCart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShoppingCart">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_STATISTI_REFERENCE_USERS">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="Statistics" Type="Gift163DBModel.Store.Statistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Statistics">
+              <PropertyRef Name="NewestUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERPROF_REFERENCE_USERS">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="UserProfile" Type="Gift163DBModel.Store.UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERS_REFERENCE_REGIONS">
+          <End Role="Regions" Type="Gift163DBModel.Store.Regions" Multiplicity="0..1" />
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Regions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERS_REFERENCE_USERRANK">
+          <End Role="UserRanks" Type="Gift163DBModel.Store.UserRanks" Multiplicity="0..1" />
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserRanks">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="RankId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERSINR_REFERENCE_ROLES">
+          <End Role="Roles" Type="Gift163DBModel.Store.Roles" Multiplicity="0..1" />
+          <End Role="UsersInRoles" Type="Gift163DBModel.Store.UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERSINR_REFERENCE_USERS">
+          <End Role="Users" Type="Gift163DBModel.Store.Users" Multiplicity="0..1" />
+          <End Role="UsersInRoles" Type="Gift163DBModel.Store.UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AEMallDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="AEMallDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Articles" EntityType="AEMallDBModel.Articles" />
+          <EntitySet Name="Configs" EntityType="AEMallDBModel.Configs" />
+          <EntitySet Name="Gallery" EntityType="AEMallDBModel.Gallery" />
+          <EntitySet Name="Genres" EntityType="AEMallDBModel.Genres" />
+          <EntitySet Name="OrderItems" EntityType="AEMallDBModel.OrderItems" />
+          <EntitySet Name="Orders" EntityType="AEMallDBModel.Orders" />
+          <EntitySet Name="PaymentModes" EntityType="AEMallDBModel.PaymentModes" />
+          <EntitySet Name="Products" EntityType="AEMallDBModel.Products" />
+          <EntitySet Name="ProductsInTypes" EntityType="AEMallDBModel.ProductsInTypes" />
+          <EntitySet Name="ProductsToRegions" EntityType="AEMallDBModel.ProductsToRegions" />
+          <EntitySet Name="ProductTypes" EntityType="AEMallDBModel.ProductTypes" />
+          <EntitySet Name="Regions" EntityType="AEMallDBModel.Regions" />
+          <EntitySet Name="Roles" EntityType="AEMallDBModel.Roles" />
+          <EntitySet Name="ShippingAddress" EntityType="AEMallDBModel.ShippingAddress" />
+          <EntitySet Name="ShoppingCart" EntityType="AEMallDBModel.ShoppingCart" />
+          <EntitySet Name="Statistics" EntityType="AEMallDBModel.Statistics" />
+          <EntitySet Name="UserProfile" EntityType="AEMallDBModel.UserProfile" />
+          <EntitySet Name="UserRanks" EntityType="AEMallDBModel.UserRanks" />
+          <EntitySet Name="Users" EntityType="AEMallDBModel.Users" />
+          <EntitySet Name="UsersInRoles" EntityType="AEMallDBModel.UsersInRoles" />
+          <AssociationSet Name="FK_ARTICLES_REFERENCE_GENRES" Association="AEMallDBModel.FK_ARTICLES_REFERENCE_GENRES">
+            <End Role="Genres" EntitySet="Genres" />
+            <End Role="Articles" EntitySet="Articles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ARTICLES_REFERENCE_USERS" Association="AEMallDBModel.FK_ARTICLES_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Articles" EntitySet="Articles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GALLERY_REFERENCE_PRODUCTS" Association="AEMallDBModel.FK_GALLERY_REFERENCE_PRODUCTS">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Gallery" EntitySet="Gallery" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GENRES_REFERENCE_GENRES" Association="AEMallDBModel.FK_GENRES_REFERENCE_GENRES">
+            <End Role="Genres" EntitySet="Genres" />
+            <End Role="Genres1" EntitySet="Genres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDERITE_REFERENCE_ORDERS" Association="AEMallDBModel.FK_ORDERITE_REFERENCE_ORDERS">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="OrderItems" EntitySet="OrderItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDERITE_REFERENCE_PRODUCTS" Association="AEMallDBModel.FK_ORDERITE_REFERENCE_PRODUCTS">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="OrderItems" EntitySet="OrderItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDERS_REFERENCE_PAYMENTM" Association="AEMallDBModel.FK_ORDERS_REFERENCE_PAYMENTM">
+            <End Role="PaymentModes" EntitySet="PaymentModes" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDERS_REFERENCE_USER1" Association="AEMallDBModel.FK_ORDERS_REFERENCE_USER1">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCT3" Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCT3">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductsToRegions" EntitySet="ProductsToRegions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCTS" Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCTS">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductsInTypes" EntitySet="ProductsInTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_REGION1" Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_REGION1">
+            <End Role="Regions" EntitySet="Regions" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_USERS" Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_PRODUCTT" Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCTT">
+            <End Role="ProductTypes" EntitySet="ProductTypes" />
+            <End Role="ProductsInTypes" EntitySet="ProductsInTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS_REFERENCE_REGIONS" Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_REGIONS">
+            <End Role="Regions" EntitySet="Regions" />
+            <End Role="ProductsToRegions" EntitySet="ProductsToRegions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTT_REFERENCE_PRODUCTT" Association="AEMallDBModel.FK_PRODUCTT_REFERENCE_PRODUCTT">
+            <End Role="ProductTypes" EntitySet="ProductTypes" />
+            <End Role="ProductTypes1" EntitySet="ProductTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REGIONS_REFERENCE_REGIONS" Association="AEMallDBModel.FK_REGIONS_REFERENCE_REGIONS">
+            <End Role="Regions" EntitySet="Regions" />
+            <End Role="Regions1" EntitySet="Regions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERS_REFERENCE_REGIONS" Association="AEMallDBModel.FK_USERS_REFERENCE_REGIONS">
+            <End Role="Regions" EntitySet="Regions" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERSINR_REFERENCE_ROLES" Association="AEMallDBModel.FK_USERSINR_REFERENCE_ROLES">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="UsersInRoles" EntitySet="UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHIPPING_REFERENCE_USERS" Association="AEMallDBModel.FK_SHIPPING_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="ShippingAddress" EntitySet="ShippingAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHOPPING_REFERENCE_USERS" Association="AEMallDBModel.FK_SHOPPING_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="ShoppingCart" EntitySet="ShoppingCart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_STATISTI_REFERENCE_USERS" Association="AEMallDBModel.FK_STATISTI_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERPROF_REFERENCE_USERS" Association="AEMallDBModel.FK_USERPROF_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERS_REFERENCE_USERRANK" Association="AEMallDBModel.FK_USERS_REFERENCE_USERRANK">
+            <End Role="UserRanks" EntitySet="UserRanks" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERSINR_REFERENCE_USERS" Association="AEMallDBModel.FK_USERSINR_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UsersInRoles" EntitySet="UsersInRoles" />
+          </AssociationSet>
+          <EntitySet Name="Logs" EntityType="AEMallDBModel.Logs" />
+          <AssociationSet Name="FK_LOGS_REFERENCE_USERS" Association="AEMallDBModel.FK_LOGS_REFERENCE_USERS">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Logs" EntitySet="Logs" />
+          </AssociationSet>
+          <EntitySet Name="Pictures" EntityType="AEMallDBModel.Pictures" />
+          <AssociationSet Name="FK_PICTURES_REFERENCE_ARTICLES" Association="AEMallDBModel.FK_PICTURES_REFERENCE_ARTICLES">
+            <End Role="Articles" EntitySet="Articles" />
+            <End Role="Pictures" EntitySet="Pictures" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Articles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="GenreId" Type="Guid" />
+          <Property Name="UserId" Type="Guid" />
+          <NavigationProperty Name="Genres" Relationship="AEMallDBModel.FK_ARTICLES_REFERENCE_GENRES" FromRole="Articles" ToRole="Genres" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_ARTICLES_REFERENCE_USERS" FromRole="Articles" ToRole="Users" />
+          <Property Type="DateTime" Name="VoidTime" Precision="3" />
+          <Property Type="String" Name="Url" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Pictures" Relationship="AEMallDBModel.FK_PICTURES_REFERENCE_ARTICLES" FromRole="Articles" ToRole="Pictures" />
+        </EntityType>
+        <EntityType Name="Configs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="IsValid" Type="Boolean" />
+          <Property Name="Content" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Gallery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="ProductId" Type="Guid" />
+          <Property Name="ThumbnailsUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Products" Relationship="AEMallDBModel.FK_GALLERY_REFERENCE_PRODUCTS" FromRole="Gallery" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="Genres">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Sequence" Type="Int32" />
+          <Property Name="ParentId" Type="Guid" />
+          <NavigationProperty Name="Articles" Relationship="AEMallDBModel.FK_ARTICLES_REFERENCE_GENRES" FromRole="Genres" ToRole="Articles" />
+          <NavigationProperty Name="Genres1" Relationship="AEMallDBModel.FK_GENRES_REFERENCE_GENRES" FromRole="Genres" ToRole="Genres1" />
+          <NavigationProperty Name="Genres2" Relationship="AEMallDBModel.FK_GENRES_REFERENCE_GENRES" FromRole="Genres1" ToRole="Genres" />
+        </EntityType>
+        <EntityType Name="OrderItems">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="OrderId" Type="Guid" />
+          <Property Name="ProductId" Type="Guid" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="ThumbUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Orders" Relationship="AEMallDBModel.FK_ORDERITE_REFERENCE_ORDERS" FromRole="OrderItems" ToRole="Orders" />
+          <NavigationProperty Name="Products" Relationship="AEMallDBModel.FK_ORDERITE_REFERENCE_PRODUCTS" FromRole="OrderItems" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="RealName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="ShippingRegion" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PostCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Mobil" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Tel" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="PaymentModeId" Type="Guid" />
+          <Property Name="PaymentGateway" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="IsPaid" Type="Boolean" />
+          <Property Name="Freight" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Weight" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CostPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ShipOrderNumber" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="IsPOD" Type="Boolean" />
+          <Property Name="Total" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="OrderItems" Relationship="AEMallDBModel.FK_ORDERITE_REFERENCE_ORDERS" FromRole="Orders" ToRole="OrderItems" />
+          <NavigationProperty Name="PaymentModes" Relationship="AEMallDBModel.FK_ORDERS_REFERENCE_PAYMENTM" FromRole="Orders" ToRole="PaymentModes" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_ORDERS_REFERENCE_USER1" FromRole="Orders" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="PaymentModes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="MerchantCode" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="SecretKey" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Name="SecondKey" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Name="Partner" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Gateway" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Sequence" Type="Int32" />
+          <Property Name="Charge" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="IsPercent" Type="Boolean" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Orders" Relationship="AEMallDBModel.FK_ORDERS_REFERENCE_PAYMENTM" FromRole="PaymentModes" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="RegionId" Type="Guid" />
+          <Property Name="Brand" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Weight" Type="Decimal" Precision="6" Scale="3" />
+          <Property Name="Keywords" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsRecommended" Type="Boolean" />
+          <Property Name="SalePrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MarketPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="SoldCount" Type="Int32" />
+          <Property Name="Discount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Latitude" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="Longitude" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="Stock" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="VistiCounts" Type="Int32" />
+          <Property Name="SuperId" Type="Guid" />
+          <NavigationProperty Name="Gallery" Relationship="AEMallDBModel.FK_GALLERY_REFERENCE_PRODUCTS" FromRole="Products" ToRole="Gallery" />
+          <NavigationProperty Name="OrderItems" Relationship="AEMallDBModel.FK_ORDERITE_REFERENCE_PRODUCTS" FromRole="Products" ToRole="OrderItems" />
+          <NavigationProperty Name="ProductsToRegions" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCT3" FromRole="Products" ToRole="ProductsToRegions" />
+          <NavigationProperty Name="ProductsInTypes" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCTS" FromRole="Products" ToRole="ProductsInTypes" />
+          <NavigationProperty Name="Regions" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_REGION1" FromRole="Products" ToRole="Regions" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_USERS" FromRole="Products" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="ProductsInTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductId" Type="Guid" />
+          <Property Name="TypeId" Type="Guid" />
+          <NavigationProperty Name="Products" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCTS" FromRole="ProductsInTypes" ToRole="Products" />
+          <NavigationProperty Name="ProductTypes" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCTT" FromRole="ProductsInTypes" ToRole="ProductTypes" />
+        </EntityType>
+        <EntityType Name="ProductsToRegions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="ProductId" Type="Guid" />
+          <Property Name="RegionId" Type="Guid" />
+          <NavigationProperty Name="Products" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCT3" FromRole="ProductsToRegions" ToRole="Products" />
+          <NavigationProperty Name="Regions" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_REGIONS" FromRole="ProductsToRegions" ToRole="Regions" />
+        </EntityType>
+        <EntityType Name="ProductTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Sequence" Type="Int32" />
+          <Property Name="ParentId" Type="Guid" />
+          <NavigationProperty Name="ProductsInTypes" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCTT" FromRole="ProductTypes" ToRole="ProductsInTypes" />
+          <NavigationProperty Name="ProductTypes1" Relationship="AEMallDBModel.FK_PRODUCTT_REFERENCE_PRODUCTT" FromRole="ProductTypes" ToRole="ProductTypes1" />
+          <NavigationProperty Name="ProductTypes2" Relationship="AEMallDBModel.FK_PRODUCTT_REFERENCE_PRODUCTT" FromRole="ProductTypes1" ToRole="ProductTypes" />
+        </EntityType>
+        <EntityType Name="Regions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Sequence" Type="Int32" />
+          <Property Name="ParentId" Type="Guid" />
+          <NavigationProperty Name="Products" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_REGION1" FromRole="Regions" ToRole="Products" />
+          <NavigationProperty Name="ProductsToRegions" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_REGIONS" FromRole="Regions" ToRole="ProductsToRegions" />
+          <NavigationProperty Name="Regions1" Relationship="AEMallDBModel.FK_REGIONS_REFERENCE_REGIONS" FromRole="Regions" ToRole="Regions1" />
+          <NavigationProperty Name="Regions2" Relationship="AEMallDBModel.FK_REGIONS_REFERENCE_REGIONS" FromRole="Regions1" ToRole="Regions" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_USERS_REFERENCE_REGIONS" FromRole="Regions" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Sequence" Type="Int32" />
+          <NavigationProperty Name="UsersInRoles" Relationship="AEMallDBModel.FK_USERSINR_REFERENCE_ROLES" FromRole="Roles" ToRole="UsersInRoles" />
+        </EntityType>
+        <EntityType Name="ShippingAddress">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Mobil" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Tel" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PostCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="IsDefault" Type="Boolean" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_SHIPPING_REFERENCE_USERS" FromRole="ShippingAddress" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="ShoppingCart">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductId" Type="Guid" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="Remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_SHOPPING_REFERENCE_USERS" FromRole="ShoppingCart" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Statistics">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="TotalUsers" Type="Int32" />
+          <Property Name="TotalCustomers" Type="Int32" />
+          <Property Name="TotalProducts" Type="Int32" />
+          <Property Name="TotalOrders" Type="Int32" />
+          <Property Name="NewUserInPast24Hrs" Type="Int32" />
+          <Property Name="NewestUserId" Type="Guid" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_STATISTI_REFERENCE_USERS" FromRole="Statistics" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="Gender" Type="Boolean" />
+          <Property Name="Avatar" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="TotalOrder" Type="Int32" />
+          <Property Name="QQ" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_USERPROF_REFERENCE_USERS" FromRole="UserProfile" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="UserRanks">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Sequence" Type="Int32" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_USERS_REFERENCE_USERRANK" FromRole="UserRanks" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="RealName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="RankId" Type="Guid" />
+          <Property Name="IsPower" Type="Boolean" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="RegionId" Type="Guid" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Mobil" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Articles" Relationship="AEMallDBModel.FK_ARTICLES_REFERENCE_USERS" FromRole="Users" ToRole="Articles" />
+          <NavigationProperty Name="Orders" Relationship="AEMallDBModel.FK_ORDERS_REFERENCE_USER1" FromRole="Users" ToRole="Orders" />
+          <NavigationProperty Name="Products" Relationship="AEMallDBModel.FK_PRODUCTS_REFERENCE_USERS" FromRole="Users" ToRole="Products" />
+          <NavigationProperty Name="Regions" Relationship="AEMallDBModel.FK_USERS_REFERENCE_REGIONS" FromRole="Users" ToRole="Regions" />
+          <NavigationProperty Name="ShippingAddress" Relationship="AEMallDBModel.FK_SHIPPING_REFERENCE_USERS" FromRole="Users" ToRole="ShippingAddress" />
+          <NavigationProperty Name="ShoppingCart" Relationship="AEMallDBModel.FK_SHOPPING_REFERENCE_USERS" FromRole="Users" ToRole="ShoppingCart" />
+          <NavigationProperty Name="Statistics" Relationship="AEMallDBModel.FK_STATISTI_REFERENCE_USERS" FromRole="Users" ToRole="Statistics" />
+          <NavigationProperty Name="UserProfile" Relationship="AEMallDBModel.FK_USERPROF_REFERENCE_USERS" FromRole="Users" ToRole="UserProfile" />
+          <NavigationProperty Name="UserRanks" Relationship="AEMallDBModel.FK_USERS_REFERENCE_USERRANK" FromRole="Users" ToRole="UserRanks" />
+          <NavigationProperty Name="UsersInRoles" Relationship="AEMallDBModel.FK_USERSINR_REFERENCE_USERS" FromRole="Users" ToRole="UsersInRoles" />
+          <NavigationProperty Name="Logs" Relationship="AEMallDBModel.FK_LOGS_REFERENCE_USERS" FromRole="Users" ToRole="Logs" />
+        </EntityType>
+        <EntityType Name="UsersInRoles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="RoleId" Type="Guid" />
+          <NavigationProperty Name="Roles" Relationship="AEMallDBModel.FK_USERSINR_REFERENCE_ROLES" FromRole="UsersInRoles" ToRole="Roles" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_USERSINR_REFERENCE_USERS" FromRole="UsersInRoles" ToRole="Users" />
+        </EntityType>
+        <Association Name="FK_ARTICLES_REFERENCE_GENRES">
+          <End Role="Genres" Type="AEMallDBModel.Genres" Multiplicity="0..1" />
+          <End Role="Articles" Type="AEMallDBModel.Articles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genres">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Articles">
+              <PropertyRef Name="GenreId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ARTICLES_REFERENCE_USERS">
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="0..1" />
+          <End Role="Articles" Type="AEMallDBModel.Articles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Articles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GALLERY_REFERENCE_PRODUCTS">
+          <End Role="Products" Type="AEMallDBModel.Products" Multiplicity="0..1" />
+          <End Role="Gallery" Type="AEMallDBModel.Gallery" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Gallery">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GENRES_REFERENCE_GENRES">
+          <End Role="Genres" Type="AEMallDBModel.Genres" Multiplicity="0..1" />
+          <End Role="Genres1" Type="AEMallDBModel.Genres" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genres">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Genres1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDERITE_REFERENCE_ORDERS">
+          <End Role="Orders" Type="AEMallDBModel.Orders" Multiplicity="0..1" />
+          <End Role="OrderItems" Type="AEMallDBModel.OrderItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderItems">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDERITE_REFERENCE_PRODUCTS">
+          <End Role="Products" Type="AEMallDBModel.Products" Multiplicity="0..1" />
+          <End Role="OrderItems" Type="AEMallDBModel.OrderItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderItems">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDERS_REFERENCE_PAYMENTM">
+          <End Role="PaymentModes" Type="AEMallDBModel.PaymentModes" Multiplicity="0..1" />
+          <End Role="Orders" Type="AEMallDBModel.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PaymentModes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="PaymentModeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDERS_REFERENCE_USER1">
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="0..1" />
+          <End Role="Orders" Type="AEMallDBModel.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_PRODUCT3">
+          <End Role="Products" Type="AEMallDBModel.Products" Multiplicity="0..1" />
+          <End Role="ProductsToRegions" Type="AEMallDBModel.ProductsToRegions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductsToRegions">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_PRODUCTS">
+          <End Role="Products" Type="AEMallDBModel.Products" Multiplicity="0..1" />
+          <End Role="ProductsInTypes" Type="AEMallDBModel.ProductsInTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductsInTypes">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_REGION1">
+          <End Role="Regions" Type="AEMallDBModel.Regions" Multiplicity="0..1" />
+          <End Role="Products" Type="AEMallDBModel.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Regions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_USERS">
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="0..1" />
+          <End Role="Products" Type="AEMallDBModel.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="SuperId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_PRODUCTT">
+          <End Role="ProductTypes" Type="AEMallDBModel.ProductTypes" Multiplicity="0..1" />
+          <End Role="ProductsInTypes" Type="AEMallDBModel.ProductsInTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductsInTypes">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS_REFERENCE_REGIONS">
+          <End Role="Regions" Type="AEMallDBModel.Regions" Multiplicity="0..1" />
+          <End Role="ProductsToRegions" Type="AEMallDBModel.ProductsToRegions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Regions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductsToRegions">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTT_REFERENCE_PRODUCTT">
+          <End Role="ProductTypes" Type="AEMallDBModel.ProductTypes" Multiplicity="0..1" />
+          <End Role="ProductTypes1" Type="AEMallDBModel.ProductTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProductTypes1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REGIONS_REFERENCE_REGIONS">
+          <End Role="Regions" Type="AEMallDBModel.Regions" Multiplicity="0..1" />
+          <End Role="Regions1" Type="AEMallDBModel.Regions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Regions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Regions1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERS_REFERENCE_REGIONS">
+          <End Role="Regions" Type="AEMallDBModel.Regions" Multiplicity="0..1" />
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Regions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERSINR_REFERENCE_ROLES">
+          <End Role="Roles" Type="AEMallDBModel.Roles" Multiplicity="0..1" />
+          <End Role="UsersInRoles" Type="AEMallDBModel.UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHIPPING_REFERENCE_USERS">
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="0..1" />
+          <End Role="ShippingAddress" Type="AEMallDBModel.ShippingAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShippingAddress">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHOPPING_REFERENCE_USERS">
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="0..1" />
+          <End Role="ShoppingCart" Type="AEMallDBModel.ShoppingCart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShoppingCart">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_STATISTI_REFERENCE_USERS">
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="0..1" />
+          <End Role="Statistics" Type="AEMallDBModel.Statistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Statistics">
+              <PropertyRef Name="NewestUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERPROF_REFERENCE_USERS">
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="0..1" />
+          <End Role="UserProfile" Type="AEMallDBModel.UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERS_REFERENCE_USERRANK">
+          <End Role="UserRanks" Type="AEMallDBModel.UserRanks" Multiplicity="0..1" />
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserRanks">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="RankId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERSINR_REFERENCE_USERS">
+          <End Role="Users" Type="AEMallDBModel.Users" Multiplicity="0..1" />
+          <End Role="UsersInRoles" Type="AEMallDBModel.UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Logs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Content" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreateTime" Precision="3" />
+          <Property Type="String" Name="IP" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="UserId" />
+          <NavigationProperty Name="Users" Relationship="AEMallDBModel.FK_LOGS_REFERENCE_USERS" FromRole="Logs" ToRole="Users" />
+        </EntityType>
+        <Association Name="FK_LOGS_REFERENCE_USERS">
+          <End Type="AEMallDBModel.Users" Role="Users" Multiplicity="0..1" />
+          <End Type="AEMallDBModel.Logs" Role="Logs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Logs">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Pictures">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="ArticleId" />
+          <Property Type="String" Name="ThumbnailsUrl" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Url" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Articles" Relationship="AEMallDBModel.FK_PICTURES_REFERENCE_ARTICLES" FromRole="Pictures" ToRole="Articles" />
+        </EntityType>
+        <Association Name="FK_PICTURES_REFERENCE_ARTICLES">
+          <End Type="AEMallDBModel.Articles" Role="Articles" Multiplicity="0..1" />
+          <End Type="AEMallDBModel.Pictures" Role="Pictures" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Articles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pictures">
+              <PropertyRef Name="ArticleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Gift163DBModelStoreContainer" CdmEntityContainer="AEMallDBEntities">
+          <EntitySetMapping Name="Articles"><EntityTypeMapping TypeName="AEMallDBModel.Articles"><MappingFragment StoreEntitySet="Articles">
+            <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="VoidTime" ColumnName="VoidTime" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Content" ColumnName="Content" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="GenreId" ColumnName="GenreId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Configs"><EntityTypeMapping TypeName="AEMallDBModel.Configs"><MappingFragment StoreEntitySet="Configs">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="IsValid" ColumnName="IsValid" />
+            <ScalarProperty Name="Content" ColumnName="Content" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Gallery"><EntityTypeMapping TypeName="AEMallDBModel.Gallery"><MappingFragment StoreEntitySet="Gallery">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            <ScalarProperty Name="ThumbnailsUrl" ColumnName="ThumbnailsUrl" />
+            <ScalarProperty Name="Url" ColumnName="Url" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Genres"><EntityTypeMapping TypeName="AEMallDBModel.Genres"><MappingFragment StoreEntitySet="Genres">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+            <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrderItems"><EntityTypeMapping TypeName="AEMallDBModel.OrderItems"><MappingFragment StoreEntitySet="OrderItems">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+            <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+            <ScalarProperty Name="ThumbUrl" ColumnName="ThumbUrl" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Orders"><EntityTypeMapping TypeName="AEMallDBModel.Orders"><MappingFragment StoreEntitySet="Orders">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="RealName" ColumnName="RealName" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="ShippingRegion" ColumnName="ShippingRegion" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+            <ScalarProperty Name="Mobil" ColumnName="Mobil" />
+            <ScalarProperty Name="Tel" ColumnName="Tel" />
+            <ScalarProperty Name="PaymentModeId" ColumnName="PaymentModeId" />
+            <ScalarProperty Name="PaymentGateway" ColumnName="PaymentGateway" />
+            <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+            <ScalarProperty Name="Freight" ColumnName="Freight" />
+            <ScalarProperty Name="Weight" ColumnName="Weight" />
+            <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+            <ScalarProperty Name="ShipOrderNumber" ColumnName="ShipOrderNumber" />
+            <ScalarProperty Name="IsPOD" ColumnName="IsPOD" />
+            <ScalarProperty Name="Total" ColumnName="Total" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PaymentModes"><EntityTypeMapping TypeName="AEMallDBModel.PaymentModes"><MappingFragment StoreEntitySet="PaymentModes">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="MerchantCode" ColumnName="MerchantCode" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="SecretKey" ColumnName="SecretKey" />
+            <ScalarProperty Name="SecondKey" ColumnName="SecondKey" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+            <ScalarProperty Name="Partner" ColumnName="Partner" />
+            <ScalarProperty Name="Gateway" ColumnName="Gateway" />
+            <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+            <ScalarProperty Name="Charge" ColumnName="Charge" />
+            <ScalarProperty Name="IsPercent" ColumnName="IsPercent" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Products"><EntityTypeMapping TypeName="AEMallDBModel.Products"><MappingFragment StoreEntitySet="Products">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="SKU" ColumnName="SKU" />
+            <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+            <ScalarProperty Name="Brand" ColumnName="Brand" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="Weight" ColumnName="Weight" />
+            <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+            <ScalarProperty Name="IsRecommended" ColumnName="IsRecommended" />
+            <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+            <ScalarProperty Name="MarketPrice" ColumnName="MarketPrice" />
+            <ScalarProperty Name="SoldCount" ColumnName="SoldCount" />
+            <ScalarProperty Name="Discount" ColumnName="Discount" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="Stock" ColumnName="Stock" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="VistiCounts" ColumnName="VistiCounts" />
+            <ScalarProperty Name="SuperId" ColumnName="SuperId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ProductsInTypes"><EntityTypeMapping TypeName="AEMallDBModel.ProductsInTypes"><MappingFragment StoreEntitySet="ProductsInTypes">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ProductsToRegions"><EntityTypeMapping TypeName="AEMallDBModel.ProductsToRegions"><MappingFragment StoreEntitySet="ProductsToRegions">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ProductTypes"><EntityTypeMapping TypeName="AEMallDBModel.ProductTypes"><MappingFragment StoreEntitySet="ProductTypes">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+            <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Regions"><EntityTypeMapping TypeName="AEMallDBModel.Regions"><MappingFragment StoreEntitySet="Regions">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+            <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Roles"><EntityTypeMapping TypeName="AEMallDBModel.Roles"><MappingFragment StoreEntitySet="Roles">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ShippingAddress"><EntityTypeMapping TypeName="AEMallDBModel.ShippingAddress"><MappingFragment StoreEntitySet="ShippingAddress">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Mobil" ColumnName="Mobil" />
+            <ScalarProperty Name="Tel" ColumnName="Tel" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ShoppingCart"><EntityTypeMapping TypeName="AEMallDBModel.ShoppingCart"><MappingFragment StoreEntitySet="ShoppingCart">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Statistics"><EntityTypeMapping TypeName="AEMallDBModel.Statistics"><MappingFragment StoreEntitySet="Statistics">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="TotalUsers" ColumnName="TotalUsers" />
+            <ScalarProperty Name="TotalCustomers" ColumnName="TotalCustomers" />
+            <ScalarProperty Name="TotalProducts" ColumnName="TotalProducts" />
+            <ScalarProperty Name="TotalOrders" ColumnName="TotalOrders" />
+            <ScalarProperty Name="NewUserInPast24Hrs" ColumnName="NewUserInPast24Hrs" />
+            <ScalarProperty Name="NewestUserId" ColumnName="NewestUserId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UserProfile"><EntityTypeMapping TypeName="AEMallDBModel.UserProfile"><MappingFragment StoreEntitySet="UserProfile">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Gender" ColumnName="Gender" />
+            <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+            <ScalarProperty Name="TotalOrder" ColumnName="TotalOrder" />
+            <ScalarProperty Name="QQ" ColumnName="QQ" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UserRanks"><EntityTypeMapping TypeName="AEMallDBModel.UserRanks"><MappingFragment StoreEntitySet="UserRanks">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Users"><EntityTypeMapping TypeName="AEMallDBModel.Users"><MappingFragment StoreEntitySet="Users">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+            <ScalarProperty Name="RealName" ColumnName="RealName" />
+            <ScalarProperty Name="RankId" ColumnName="RankId" />
+            <ScalarProperty Name="IsPower" ColumnName="IsPower" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+            <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="Mobil" ColumnName="Mobil" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UsersInRoles"><EntityTypeMapping TypeName="AEMallDBModel.UsersInRoles"><MappingFragment StoreEntitySet="UsersInRoles">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Logs">
+            <EntityTypeMapping TypeName="AEMallDBModel.Logs">
+              <MappingFragment StoreEntitySet="Logs">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pictures">
+            <EntityTypeMapping TypeName="AEMallDBModel.Pictures">
+              <MappingFragment StoreEntitySet="Pictures">
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="ThumbnailsUrl" ColumnName="ThumbnailsUrl" />
+                <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="GiftDB" ZoomLevel="20">
+        <EntityTypeShape EntityType="AEMallDBModel.Articles" Width="1.5" PointX="5.25" PointY="18.5" Height="2.5430916341145817" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Configs" Width="1.5" PointX="3.375" PointY="5.75" Height="1.7790128580729174" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Gallery" Width="1.5" PointX="7.5" PointY="13.75" Height="2.1610522460937496" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Genres" Width="1.5" PointX="3" PointY="13.625" Height="2.3520719401041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.OrderItems" Width="1.5" PointX="10.5" PointY="16.875" Height="2.7341113281250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Orders" Width="1.5" PointX="8.25" PointY="17" Height="5.599406738281246" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.PaymentModes" Width="1.5" PointX="6" PointY="4" Height="3.6892097981770817" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Products" Width="1.5" PointX="5.25" PointY="11.875" Height="5.7904264322916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.ProductsInTypes" Width="1.5" PointX="7.5" PointY="10.75" Height="2.1610522460937496" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.ProductsToRegions" Width="1.5" PointX="10.5" PointY="13.75" Height="2.1610522460937496" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.ProductTypes" Width="1.5" PointX="5.25" PointY="8.5" Height="2.5430916341145817" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Regions" Width="1.5" PointX="0.75" PointY="14.375" Height="2.7341113281250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Roles" Width="1.5" PointX="3" PointY="23.875" Height="1.7790128580729174" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.ShippingAddress" Width="1.5" PointX="5.25" PointY="29.375" Height="2.7341113281250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.ShoppingCart" Width="1.5" PointX="5.25" PointY="32.875" Height="2.5430916341145888" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Statistics" Width="1.5" PointX="5.25" PointY="36.125" Height="2.9251310221354174" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.UserProfile" Width="1.5" PointX="5.25" PointY="39.875" Height="2.7341113281250102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.UserRanks" Width="1.5" PointX="0.75" PointY="18.875" Height="1.7790128580729174" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.Users" Width="1.5" PointX="3" PointY="17.375" Height="4.8353279622395888" IsExpanded="true" />
+        <EntityTypeShape EntityType="AEMallDBModel.UsersInRoles" Width="1.5" PointX="5.25" PointY="22.75" Height="2.161052246093746" IsExpanded="true" />
+        <AssociationConnector Association="AEMallDBModel.FK_ARTICLES_REFERENCE_GENRES" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="15.977071940104167" />
+          <ConnectorPoint PointX="4.875" PointY="16.352071940104167" />
+          <ConnectorPoint PointX="4.875" PointY="20.464125224405926" />
+          <ConnectorPoint PointX="5.25" PointY="20.464125224405926" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_ARTICLES_REFERENCE_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="19.419562612202963" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="19.419562612202963" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="19.419562612202963" />
+          <ConnectorPoint PointX="5.25" PointY="19.419562612202963" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_GALLERY_REFERENCE_PRODUCTS" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="14.830526123046875" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="14.830526123046875" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="14.830526123046875" />
+          <ConnectorPoint PointX="7.5" PointY="14.830526123046875" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_GENRES_REFERENCE_GENRES" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5319230769230767" PointY="15.977071940104167" />
+          <ConnectorPoint PointX="3.5319230769230767" PointY="16.227071940104167" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="16.227071940104167" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="15.977071940104167" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_ORDERITE_REFERENCE_ORDERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="18.3045556640625" />
+          <ConnectorPoint PointX="10.5" PointY="18.3045556640625" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_ORDERITE_REFERENCE_PRODUCTS" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="16.90625" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="16.90625" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="16.90625" />
+          <ConnectorPoint PointX="7.916666666666667" PointY="16.90625" />
+          <ConnectorPoint PointX="8.0833333333333339" PointY="16.90625" />
+          <ConnectorPoint PointX="10.5" PointY="16.90625" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_ORDERS_REFERENCE_PAYMENTM" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.125" PointY="7.6892097981770817" />
+          <ConnectorPoint PointX="7.125" PointY="22.043518880208332" />
+          <ConnectorPoint PointX="7.1563435230368517" PointY="22.043518880208332" />
+          <ConnectorPoint PointX="7.3230101897035178" PointY="22.043518880208332" />
+          <ConnectorPoint PointX="8.25" PointY="22.043518880208332" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_ORDERS_REFERENCE_USER1" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="18.082713216145834" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="18.082713216145834" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="18.082713216145834" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="18.082713216145834" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="18.082713216145834" />
+          <ConnectorPoint PointX="8.25" PointY="18.082713216145834" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCT3" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="13.361775623046874" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="13.361775623046874" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="13.361775623046874" />
+          <ConnectorPoint PointX="11.25" PointY="13.361775623046874" />
+          <ConnectorPoint PointX="11.25" PointY="13.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCTS" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="12.393026123046875" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="12.393026123046875" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="12.393026123046875" />
+          <ConnectorPoint PointX="7.5" PointY="12.393026123046875" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_REGION1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="16.699339134114584" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="16.699339134114584" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="16.699339134114584" />
+          <ConnectorPoint PointX="5.25" PointY="16.699339134114584" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="17.438460538461534" />
+          <ConnectorPoint PointX="4.8160744349011209" PointY="17.122386103560412" />
+          <ConnectorPoint PointX="4.9339255650988791" PointY="17.004534973362656" />
+          <ConnectorPoint PointX="4.9375" PointY="17.000960538461534" />
+          <ConnectorPoint PointX="4.9375" PointY="17.979079278445514" />
+          <ConnectorPoint PointX="5.2511528461538459" PointY="17.665426432291667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_PRODUCTT" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="9.6249995000000013" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="9.6249995000000013" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="9.6249995000000013" />
+          <ConnectorPoint PointX="8.25" PointY="9.6249995000000013" />
+          <ConnectorPoint PointX="8.25" PointY="10.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_PRODUCTS_REFERENCE_REGIONS" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="15.505917567057292" />
+          <ConnectorPoint PointX="2.75" PointY="15.505917567057292" />
+          <ConnectorPoint PointX="2.75" PointY="16.242696940104167" />
+          <ConnectorPoint PointX="4.682291666666667" PointY="16.242696940104167" />
+          <ConnectorPoint PointX="4.848958333333333" PointY="16.242696940104167" />
+          <ConnectorPoint PointX="5" PointY="16.242696940104167" />
+          <ConnectorPoint PointX="5" PointY="17.915426432291667" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="17.915426432291667" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="17.915426432291667" />
+          <ConnectorPoint PointX="8" PointY="17.915426432291667" />
+          <ConnectorPoint PointX="8" PointY="16.16105224609375" />
+          <ConnectorPoint PointX="11.25" PointY="16.16105224609375" />
+          <ConnectorPoint PointX="11.25" PointY="15.91105224609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_PRODUCTT_REFERENCE_PRODUCTT" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.7819230769230767" PointY="11.043091634114582" />
+          <ConnectorPoint PointX="5.7819230769230767" PointY="11.293091634114582" />
+          <ConnectorPoint PointX="6.2284615384615378" PointY="11.293091634114582" />
+          <ConnectorPoint PointX="6.2284615384615378" PointY="11.043091634114582" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_REGIONS_REFERENCE_REGIONS" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.2819230769230767" PointY="17.109111328125003" />
+          <ConnectorPoint PointX="1.2819230769230767" PointY="17.359111328125003" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="17.359111328125003" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="17.109111328125003" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_USERS_REFERENCE_REGIONS" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.2499999999999996" PointY="17.109111328125003" />
+          <ConnectorPoint PointX="2.625" PointY="17.484111328125003" />
+          <ConnectorPoint PointX="2.625" PointY="16.998847153846153" />
+          <ConnectorPoint PointX="3.0011528461538459" PointY="17.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_USERSINR_REFERENCE_ROLES" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="24.393026123046873" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="24.393026123046873" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="24.393026123046873" />
+          <ConnectorPoint PointX="5.25" PointY="24.393026123046873" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_SHIPPING_REFERENCE_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="22.392115887019227" />
+          <ConnectorPoint PointX="4.96875" PointY="22.860865887019227" />
+          <ConnectorPoint PointX="4.96875" PointY="30.742055664062505" />
+          <ConnectorPoint PointX="5.25" PointY="30.742055664062505" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_SHOPPING_REFERENCE_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.4884615384615412" PointY="22.40134765625" />
+          <ConnectorPoint PointX="4.9375" PointY="22.85038611778846" />
+          <ConnectorPoint PointX="4.9375" PointY="34.146545817057294" />
+          <ConnectorPoint PointX="5.25" PointY="34.146545817057294" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_STATISTI_REFERENCE_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.44692307692308" PointY="22.40134765625" />
+          <ConnectorPoint PointX="5" PointY="22.954424579326918" />
+          <ConnectorPoint PointX="5" PointY="37.587565511067709" />
+          <ConnectorPoint PointX="5.25" PointY="37.587565511067709" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_USERPROF_REFERENCE_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.4676923076923112" PointY="22.40134765625" />
+          <ConnectorPoint PointX="4.90625" PointY="22.839905348557689" />
+          <ConnectorPoint PointX="4.90625" PointY="41.242055664062505" />
+          <ConnectorPoint PointX="5.25" PointY="41.242055664062505" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_USERS_REFERENCE_USERRANK" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="19.764506429036459" />
+          <ConnectorPoint PointX="3" PointY="19.764506429036459" />
+        </AssociationConnector>
+        <AssociationConnector Association="AEMallDBModel.FK_USERSINR_REFERENCE_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="22.350577425480765" />
+          <ConnectorPoint PointX="5.0625" PointY="22.913077425480765" />
+          <ConnectorPoint PointX="5.0625" PointY="22.561347153846153" />
+          <ConnectorPoint PointX="5.2511528461538459" PointY="22.75" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="AEMallDBModel.Logs" Width="1.5" PointX="5.25" PointY="25.75" Height="2.3520719401041674" />
+        <AssociationConnector Association="AEMallDBModel.FK_LOGS_REFERENCE_USERS" >
+          <ConnectorPoint PointX="4.5" PointY="22.371346656249994" />
+          <ConnectorPoint PointX="4.875" PointY="22.746346656249994" />
+          <ConnectorPoint PointX="4.875" PointY="26.926035970052084" />
+          <ConnectorPoint PointX="4.885416666666667" PointY="26.926035970052084" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="26.926035970052084" />
+          <ConnectorPoint PointX="5.25" PointY="26.926035970052084" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="AEMallDBModel.Pictures" Width="1.5" PointX="7.5" PointY="24" Height="2.161052246093746" />
+        <AssociationConnector Association="AEMallDBModel.FK_PICTURES_REFERENCE_ARTICLES" >
+          <ConnectorPoint PointX="6.75" PointY="21.553842023838147" />
+          <ConnectorPoint PointX="7.0660744349011217" PointY="21.869916458739269" />
+          <ConnectorPoint PointX="7.1839255650988791" PointY="21.987767588937025" />
+          <ConnectorPoint PointX="7.3125" PointY="22.116342023838147" />
+          <ConnectorPoint PointX="7.3125" PointY="25.080526123046873" />
+          <ConnectorPoint PointX="7.5" PointY="25.080526123046873" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

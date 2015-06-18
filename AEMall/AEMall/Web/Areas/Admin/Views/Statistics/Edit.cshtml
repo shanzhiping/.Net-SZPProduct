@@ -1,0 +1,90 @@
+﻿@model Models.Statistics
+@using (Ajax.BeginForm(new AjaxOptions() { UpdateTargetId = "Main" }))
+{
+    <div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+    <fieldset>
+        <legend>新建/编辑</legend>       
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.Name)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.Name)
+                    @Html.ValidationMessageFor(model => model.Name)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.CreateTime)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.CreateTime)
+                    @Html.ValidationMessageFor(model => model.CreateTime)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.TotalUsers)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.TotalUsers)
+                    @Html.ValidationMessageFor(model => model.TotalUsers)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.TotalCustomers)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.TotalCustomers)
+                    @Html.ValidationMessageFor(model => model.TotalCustomers)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.TotalProducts)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.TotalProducts)
+                    @Html.ValidationMessageFor(model => model.TotalProducts)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.TotalOrders)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.TotalOrders)
+                    @Html.ValidationMessageFor(model => model.TotalOrders)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.NewUserInPast24Hrs)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.NewUserInPast24Hrs)
+                    @Html.ValidationMessageFor(model => model.NewUserInPast24Hrs)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.NewestUserId)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.NewestUserId)
+                    @Html.ValidationMessageFor(model => model.NewestUserId)
+                 </div>
+			</div>
+            @{Html.RenderPartial("Button_Submit");}       
+    </fieldset>
+}

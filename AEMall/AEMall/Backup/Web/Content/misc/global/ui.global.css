@@ -1,0 +1,500 @@
+﻿
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+body
+{
+    font-family: "Verdana";
+    font-weight: normal;
+    font-size: .75em;
+    color: black;
+}
+.title1
+{
+    font: bold 180% "楷体_GB2312" , "微软雅黑";
+}
+.title2
+{
+    font: bold 110% "楷体_GB2312" , "微软雅黑";
+}
+
+/* Site
+   -------------------------------- */
+body, .text-box
+{
+    font-family: "Verdana";
+}
+form
+{
+    padding: 0;
+    margin: 0 auto;
+}
+#buttons
+{
+    padding-bottom: 5px;
+}
+
+#buttons a
+{
+     font-weight:bold;
+    float: left;
+    display: inline-block;
+    margin-right: 4px;
+    padding: 4px 8px 3px 8px;
+    text-decoration: none;
+}
+
+#buttons a:hover
+{
+     font-weight:bold;
+    text-decoration: underline;
+}
+
+.controls
+{
+    width: 100%;
+    float: left;
+    margin-top: 2px;
+    display: none;
+}
+.slider_wrapper
+{
+    border: 1px solid #d8dcdf;
+    padding: 4px;
+    height: 24px;
+    display: block;
+}
+.slider_wrapper b
+{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    margin: 0px;
+}
+.slider_wrapper span
+{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    margin: 0px;
+}
+.slider_wrapper select
+{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    margin: 0px;
+}
+.slider_wrapper .submit
+{
+    float: left;
+    margin-left: 4px;
+    height: 24px;
+    width: 80px;
+    line-height: 24px;
+    cursor: pointer;
+    display: block;
+    color: #004276;
+}
+.slider_wrapper .submit:hover
+{
+    float: left;
+    margin-left: 4px;
+    height: 24px;
+    width: 80px;
+    line-height: 24px;
+    cursor: pointer;
+    display: block;
+    color: #c00;
+}
+.slider_close
+{
+    float: right;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    text-indent: -9999px;
+    background: url(images/bg_button_close.jpg) no-repeat;
+}
+input
+{
+    font-family: "Verdana";
+}
+fieldset
+{
+    float: left;
+    width: 99%;
+    margin:4px 10px 0px 0px;
+    padding: 10px 20px;
+}
+fieldset th
+{
+    width:120px;
+    text-align:right;
+    padding-right:10px;
+}
+fieldset td img
+{
+    float: left;
+    margin:2px;
+    width:60px;
+    height:45px;
+    border:1px solid #ccc;
+}
+legend
+{
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td
+{
+    padding: 6px 4px 5px 4px;
+    border: solid 1px #d5d5d5;
+}
+.category td
+{
+    padding-left:12px;
+    }
+
+table tr:hover
+{
+    background-color: #f6f6f6;
+}
+
+table th
+{   
+    padding: 6px 2px 6px 2px;
+    border: solid 1px #d5d5d5;
+}
+.dataTables_wrapper
+{
+    float: left;
+    width: 100%;
+    margin: 4px auto;
+}
+#datatable th
+{
+     font-weight:bold;
+    }
+.fg-toolbar
+{
+    height: 1px !important;
+    overflow: hidden;
+    border: 0px !important;
+}
+.DataTables_sort_wrapper
+{
+    position: relative;
+}
+.css_right
+{
+    float: right;
+    display: inline;
+    right: 0;
+    position: absolute;
+}
+.right-num
+{
+    text-align:right;
+}
+.display-label
+{
+    float: left;
+    width: 80px;
+    padding: 7px;
+    text-align: right;
+    font-weight: bold;
+}
+.display-field
+{
+    padding: 7px;
+    float: left;
+}
+.editor-label
+{
+    float: left;
+    width: 80px;
+    padding: 7px;
+    text-align: right;
+    font-weight: bold;
+}
+.editor-field
+{
+    float: left;
+    padding: 3px;
+}
+.editor-field label
+{
+    cursor:pointer;
+}
+.upload_image_wrapper
+{
+    float:left;
+    position:relative;
+    display:block;
+    width:60px;
+    height:60px;
+    margin-left:4px; 
+}
+.upload_image_wrapper a.del
+{
+    position:absolute;
+    right:0px;
+    display:block;
+    width:20px;
+    height:20px;
+    background:red;
+    text-indent:-9999px;
+    z-index:1001;
+    background:url(images/btn_del.png) 0px 0px;
+}
+.upload_image_wrapper a.del:hover
+{
+    position:absolute;
+    right:0px;
+    display:block;
+    width:20px;
+    height:20px;
+    background:red;
+    text-indent:-9999px;
+    z-index:1001;
+    background:url(images/btn_del.png) 0px -20px;
+}
+.upload_image_wrapper a.ins
+{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    display:block;
+    width:20px;
+    height:20px;
+    background:red;
+    text-indent:-9999px;
+    z-index:1001;
+    background:url(images/btn_ins.png) 0px 0px;
+}
+.upload_image_wrapper a.ins:hover
+{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    display:block;
+    width:20px;
+    height:20px;
+    background:red;
+    text-indent:-9999px;
+    z-index:1001;
+    background:url(images/btn_ins.png) 0px -20px;
+}
+.upload_image_wrapper img
+{
+    position:absolute;
+    display:block;
+    width:60px;
+    height:60px;
+    z-index:1000;
+}
+
+
+.editor-field select
+{
+    float: left;
+    display: inline;
+    margin-left: 5px;
+    border: 1px solid #999;
+    line-height: 22px;
+    padding-left: 2px;
+    background: url(images/bg_input.jpg) no-repeat;
+     width: 165px;
+    height: 24px;
+}
+
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-errors ul
+{
+    margin: 0;
+    padding: 0 30px;
+    line-height: 200%;
+}
+
+.validation-summary-valid
+{
+}
+#Menu_accordion a
+{
+    font-weight:bold;
+    text-decoration:none;
+}
+#Menu_accordion a:hover
+{
+     font-weight:bold;
+      text-decoration:none;
+}
+.themelist a
+{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+}
+.calendarcontent div
+{
+    float: left;
+    width: 14%;
+    height: 100px;
+    border-bottom: 1px #e4e4e4 solid;
+}
+.calendartitle div
+{
+    float: left;
+    width: 14%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    border-bottom: 1px #e4e4e4 solid;
+}
+
+.calendarcontent p
+{
+    margin: 10px 5px;
+}
+
+.center
+{
+    text-align: center;
+}
+.operation a:link
+{
+    color: #A67177;
+}
+
+.operation a:hover
+{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+#top a:link
+{
+    text-decoration: none;
+}
+
+#top a:hover
+{
+    text-decoration: underline;
+}
+
+.button_edit
+{
+    cursor: pointer;
+    height: 22px;
+    vertical-align: middle;
+    font: bold 12px/22px verdana;
+}
+
+.text-box
+{
+    float: left;
+    display: inline;
+    margin-left: 5px;
+    border: 1px solid #999;
+    line-height: 22px;
+    padding-left: 2px;
+    background: url(images/bg_input.jpg) no-repeat;
+}
+.text-area
+{
+    float: left;
+    display: inline;
+    margin-left: 5px;
+    vertical-align: top;
+    border: 1px solid #999;
+    line-height: 22px;
+    padding-left: 2px;
+    background: url(images/bg_input.jpg) no-repeat;
+}
+.single-line
+{
+    width: 160px;
+    height: 22px;
+}
+
+.single-long
+{
+    width: 360px;
+    height: 22px;
+}
+
+.multi-long
+{
+    width: 460px;
+    height: 130px;
+}
+.boxBorder
+{
+    font-weight: bold;
+    margin:0px auto;
+    padding:0px 2px;
+    *padding:1px 2px;
+    text-align: center;
+    line-height:18px;
+    height:18px;
+    display:inline-block;
+    vertical-align:middle;
+}
+.boxRed
+{
+    background:#c00;
+    border: #820000 1px solid;
+    color:#fff;
+    }
+.boxGreen
+{
+    background:Green;
+    border: #004d00 1px solid;
+    color:#fff;
+    }
+  #bottom  a 
+    {
+        font-weight:bold;
+        text-decoration:none;
+   }
+ #bottom  a:hover
+{
+ font-weight:bold;
+ text-decoration:underline;
+ }

@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Models.Articles>
+@{ Layout = null;}
+<ul>
+    @foreach (var item in Model)
+    {
+        <li><a href="javascript:void(0);" target="_blank">
+            <img src="@(new BLL.PicturesBLL().GetFirstPictureOriginal(item.Id))" />
+        </a></li>                
+    }
+</ul>

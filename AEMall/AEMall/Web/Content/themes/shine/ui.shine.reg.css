@@ -1,0 +1,112 @@
+﻿#main_wrapper #main
+{
+    position:relative;
+    margin: 0px auto;
+    width: 838px;
+    height: 220px;
+    padding: 60px 80px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font: normal 14px/24px Verdana, "宋体";
+}
+#main form
+{
+    margin: 0px auto;
+    width: 100%;
+    border: 0px;
+}
+#main table
+{
+    margin: 0px auto;
+    width: 100%;
+    border: 0px;
+}
+#main th, td
+{
+    padding:4px;
+}
+#main th
+{
+    width:180px;
+    font: bold 14px/24px Verdana, "宋体";
+    text-align:right;
+}
+#main table td input
+{
+    height: 23px;
+    width: 210px;
+    border: 1px solid #ccc;
+    background: url(images/bg_input.jpg) no-repeat;
+    font: bold 14px/23px Verdana;
+    text-indent: 3px;
+    color: #666;
+}
+#main table td .field-validation-error
+{
+    font: normal 12px/24px Verdana, "宋体";
+    color:#c00;
+}
+#main table td input, img
+{  
+  vertical-align:middle;  
+}
+#main table td img
+{
+    cursor:pointer;
+}
+#main table #login_submit
+{
+    margin-left:191px;
+    *margin-left:193px;
+    display: block;
+    height: 32px;
+    width: 92px;
+    border: 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#main table .sub_static
+{
+    background: url(images/bg_button_login.jpg) 0px -160px no-repeat;
+}
+#main table .sub_hover
+{
+    background: url(images/bg_button_login.jpg) 0px -128px no-repeat;
+}
+#main table td .authcode
+{
+    width: 80px;
+    text-align:center;
+}
+#main  .validation-summary-errors
+{
+    position:absolute;
+    margin:-30px 0px 0px 198px;
+    color: #c00;
+    font: bold 14px/20px "宋体" , Verdana;
+}
+#main  .validation-summary-errors ul,li
+{
+   margin:0px;
+   padding:0px;
+   list-style-type:none;
+}
+
+#main  #success_msg
+{
+    font: bold 14px/20px "宋体" , Verdana;
+    color:#060;
+}
+#main  #success_msg a
+{
+    font: bold 14px/20px "宋体" , Verdana;
+    color:#c00;
+    text-decoration:none;
+}
+#main  #success_msg a:hover
+{
+    font: bold 14px/20px "宋体" , Verdana;
+    color:#c00;
+    text-decoration:underline;
+}
+

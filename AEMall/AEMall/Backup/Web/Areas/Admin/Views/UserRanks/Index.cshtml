@@ -1,0 +1,46 @@
+﻿@model PagedList<Models.UserRanks>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+
+    @{Html.RenderPartial("Button_Search");}
+
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+        <thead>
+            <tr>
+				<th>
+					名称
+				</th>
+
+				<th>
+					序号
+				</th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+					<td>
+						@item.Name
+					</td>
+
+					<td>
+						@item.Sequence
+					</td>
+                    <td class="center operation">
+                        @{Html.RenderPartial("Link_Operations",item);}
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+	@Html.Raw(Ajax.MikePager(Model))

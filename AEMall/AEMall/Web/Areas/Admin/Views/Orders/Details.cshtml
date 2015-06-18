@@ -1,0 +1,192 @@
+﻿@model Models.Orders
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.UserId)
+            </th>
+            <td>
+                @Model.UserId
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.RealName)
+            </th>
+            <td>
+                @Model.RealName
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.CreateTime)
+            </th>
+            <td>
+                @Model.CreateTime
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.ShippingRegion)
+            </th>
+            <td>
+                @Model.ShippingRegion
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Address)
+            </th>
+            <td>
+                @Model.Address
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.PostCode)
+            </th>
+            <td>
+                @Model.PostCode
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Mobil)
+            </th>
+            <td>
+                @Model.Mobil
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Tel)
+            </th>
+            <td>
+                @Model.Tel
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.PaymentModeId)
+            </th>
+            <td>
+                @Model.PaymentModeId
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.PaymentGateway)
+            </th>
+            <td>
+                @Model.PaymentGateway
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.IsPaid)
+            </th>
+            <td>
+                @Model.IsPaid
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Freight)
+            </th>
+            <td>
+                @Model.Freight
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Weight)
+            </th>
+            <td>
+                @Model.Weight
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.CostPrice)
+            </th>
+            <td>
+                @Model.CostPrice
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.ShipOrderNumber)
+            </th>
+            <td>
+                @Model.ShipOrderNumber
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.IsPOD)
+            </th>
+            <td>
+                @Model.IsPOD
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Total)
+            </th>
+            <td>
+                @Model.Total
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.IsActive)
+            </th>
+            <td>
+                @Model.IsActive
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Remark)
+            </th>
+            <td>
+                @Model.Remark
+            </td>
+		</tr>
+    </table>
+</fieldset>
+

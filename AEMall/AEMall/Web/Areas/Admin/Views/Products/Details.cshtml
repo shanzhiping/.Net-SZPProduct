@@ -1,0 +1,156 @@
+﻿@model Models.Products
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.SKU)
+            </th>
+            <td>
+                @Model.SKU
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.RegionId)
+            </th>
+            <td>
+                @Model.Regions.Name
+            </td>
+        </tr>
+         <tr>
+            <th>
+                商品类型
+            </th>
+            <td>
+                @Html.Raw(ViewBag.ProductTypes)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Brand)
+            </th>
+            <td>
+                @Model.Brand
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Weight)
+            </th>
+            <td>
+                @Model.Weight
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Keywords)
+            </th>
+            <td>
+                @Model.Keywords
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.IsRecommended)
+            </th>
+            <td>
+                @Model.IsRecommended
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.SalePrice)
+            </th>
+            <td>
+                @String.Format("{0:C}", Model.SalePrice)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.MarketPrice)
+            </th>
+            <td>
+                @String.Format("{0:C}", Model.MarketPrice)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.SoldCount)
+            </th>
+            <td>
+                @Model.SoldCount
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Discount)
+            </th>
+            <td>
+                @Model.Discount
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Stock)
+            </th>
+            <td>
+                @Model.Stock
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.CreateTime)
+            </th>
+            <td>
+                @String.Format("{0:yyyy-MM-dd HH:mm:ss}", Model.CreateTime)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.VistiCounts)
+            </th>
+            <td>
+                @Model.VistiCounts
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.SuperId)
+            </th>
+            <td>
+                @(Model.SuperId.HasValue ? Model.Users.Name : "")
+            </td>
+        </tr>
+        <tr>
+            <th>
+                相关图片：
+            </th>
+            <td>
+                @Html.Action("Basket", "Gallery", new { id=Model.Id})
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Description)
+            </th>
+            <td>
+                @Html.Raw(Model.Description)
+            </td>
+        </tr>
+    </table>
+</fieldset>

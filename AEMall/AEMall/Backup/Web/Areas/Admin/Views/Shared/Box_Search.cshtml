@@ -1,0 +1,13 @@
+﻿<div id="search_wrapper" class="controls">
+    <div class="slider_wrapper">
+        @using (Ajax.BeginForm(new AjaxOptions() { UpdateTargetId = "Main" }))
+        {
+            <div onclick="$('#search_wrapper').slideToggle();" title="关闭搜索框" class="slider_close">
+                [X]</div>
+            @Html.Raw("<b>任意关键字</b>")
+            @Html.TextBox("keyword", null, new { title = "请输入任意字段的搜索关键字", @class = "text-box single-line", @maxlength = "50" })
+            <input id="pageIndex" name="pageIndex" type="hidden" value="pageIndex" />
+            <input type="submit" value=" 立刻搜索 " class="ui-state-default submit" />
+        }
+    </div>
+    </div>

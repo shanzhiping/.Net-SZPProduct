@@ -1,0 +1,95 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@ViewBag.SysName | 电子商务平台</title>
+    <link href="@Url.Content("~/Content/misc/global/ui.global.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/misc/layout/layout-default-latest.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/misc/single/ui.stock.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/misc/admin/ui.admin.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/misc/treeTable/ui.treeTable.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/misc/pager/ui.pager.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/themes/blitzer/jquery-ui.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Scripts/JqueryUploadify/uploadify.css")" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="@Url.Content("~/fav.ico")" />
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.8.11.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-i18n.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.layout.1.2.0.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.layout.1.2.0.min.setting.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.ui.core.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.ui.datepicker.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/i18n/jquery.ui.datepicker-zh-CN.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-timepicker-addon.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.dataTables.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.treeTable.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.string.format.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jqueryuploadify/swfobject.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jqueryuploadify/jquery.uploadify.v2.1.0.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jqueryuploadify/jquery.uploadify.v2.1.0.min-setting.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/ckeditor/ckeditor.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.initialize.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div id="errormsg" title="系统错误">
+    </div>
+    <div id="dialog-edit" title="编辑">
+    </div>
+    <div id="msg" title="最新消息（1分钟刷新一次）">
+    </div>
+    <div class="ui-layout-center ui-widget-content" id="Main">
+        @{Html.RenderAction("Stock");}
+    </div>
+    <div class="ui-layout-north  ui-widget-header">
+        <div style="float: left;">
+            <div class="title1">
+                @ViewBag.SysName－电子商务平台</div>
+            <div class="title2">
+                后台管理</div>
+        </div>
+        <div style="float: right; margin: 10px;" id="top">
+            <span id="Loading" class="ui-state-error">&nbsp; 数据加载中... &nbsp;</span> <span id="datetimenow"
+                style="cursor: pointer;"></span>&nbsp; 当前用户：@(new BLL.UsersBLL().Get(Guid.Parse(Context.User.Identity.Name)).Name)
+            |
+            @Ajax.ActionLink("工作台", "Stock", new AjaxOptions() { UpdateTargetId = "Main" })
+            |
+            @Ajax.ActionLink("修改密码", "Password", new AjaxOptions() { UpdateTargetId = "Main" })
+            |
+            @Html.ActionLink("退出系统", "LogOff", "Account", new { area = "" }, null)
+        </div>
+    </div>
+    <div class="ui-layout-west  ui-widget-content">
+        <div id="Menu_accordion">
+            <h4>
+                <a>文章管理</a></h4>
+            <div>
+                @Ajax.ActionLink("文章列表", "Index", "Articles", null, new AjaxOptions() { UpdateTargetId = "Main" }, new { @style = "display: block;padding: 5px 0;" })
+                @Ajax.ActionLink("文章分类", "Index", "Genres", null, new AjaxOptions() { UpdateTargetId = "Main" }, new { @style = "display: block;padding: 5px 0;" })
+            </div>
+            <h4>
+                <a>商品管理</a></h4>
+            <div>
+                @Ajax.ActionLink("商品列表", "Index", "Products", null, new AjaxOptions() { UpdateTargetId = "Main" }, new { @style = "display: block;padding: 5px 0;" })
+                @Ajax.ActionLink("商品分类", "Index", "ProductTypes", null, new AjaxOptions() { UpdateTargetId = "Main" }, new { @style = "display: block;padding: 5px 0;" })
+            </div>
+            <h4>
+                <a>系统管理</a></h4>
+            <div>
+                @Ajax.ActionLink("地区管理", "Index", "Regions", null, new AjaxOptions() { UpdateTargetId = "Main" }, new { @style = "display: block;padding: 5px 0;" })
+                @Ajax.ActionLink("用户管理", "Index", "Users", null, new AjaxOptions() { UpdateTargetId = "Main" }, new { @style = "display: block;padding: 5px 0;" })
+                @Ajax.ActionLink("参数设置", "Index", "Configs", null, new AjaxOptions() { UpdateTargetId = "Main" }, new { @style = "display: block;padding: 5px 0;" })
+                @Ajax.ActionLink("系统日志", "Index", "Logs", null, new AjaxOptions() { UpdateTargetId = "Main" }, new { @style = "display: block;padding: 5px 0;" })
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="ui-layout-south  ui-widget toolbar ui-widget-content ui-state-default">
+        <script language="javascript" type="text/javascript">            printCopyright();</script>
+        <a href="http://www.heejaa.com" target="_blank" class="copyright">heejaa.com</a>
+    </div>
+</body>
+</html>

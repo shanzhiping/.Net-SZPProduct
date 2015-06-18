@@ -1,0 +1,2 @@
+﻿@Html.RadioButton("", "True", (Model == null ? false : (Convert.ToBoolean(Model) ? true : false))) @ViewData["Yes"]
+@Html.RadioButton("", "False", (Model == null ? false : (Convert.ToBoolean(Model) ? false : true))) @ViewData["No"]

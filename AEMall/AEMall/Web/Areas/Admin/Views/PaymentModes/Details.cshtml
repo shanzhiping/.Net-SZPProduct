@@ -1,0 +1,120 @@
+﻿@model Models.PaymentModes
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.MerchantCode)
+            </th>
+            <td>
+                @Model.MerchantCode
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Email)
+            </th>
+            <td>
+                @Model.Email
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.SecretKey)
+            </th>
+            <td>
+                @Model.SecretKey
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.SecondKey)
+            </th>
+            <td>
+                @Model.SecondKey
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Password)
+            </th>
+            <td>
+                @Model.Password
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Partner)
+            </th>
+            <td>
+                @Model.Partner
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Gateway)
+            </th>
+            <td>
+                @Model.Gateway
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Sequence)
+            </th>
+            <td>
+                @Model.Sequence
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Charge)
+            </th>
+            <td>
+                @Model.Charge
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.IsPercent)
+            </th>
+            <td>
+                @Model.IsPercent
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Description)
+            </th>
+            <td>
+                @Model.Description
+            </td>
+		</tr>
+    </table>
+</fieldset>
+

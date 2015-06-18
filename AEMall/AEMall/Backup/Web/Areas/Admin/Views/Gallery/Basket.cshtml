@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Models.Gallery>
+
+@foreach (var item in Model) {   
+           <span class="upload_image_wrapper">
+                <a href="javascript:void(0);" title="从图片栏中删除该图片" class="del" onclick="delThisImage(this);">删除</a>
+                <a href="javascript:void(0);" title="将该图插入到描述" class="ins" onclick='insThisImage(this);'>插入</a>
+                <img src="@Url.Content("~/"+@item.Url.Replace("Published","Thumbnails")+"")" alt=""/>
+           </span>     
+}

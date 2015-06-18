@@ -1,0 +1,84 @@
+﻿@model Models.Users
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Password)
+            </th>
+            <td>
+                @Model.Password
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.RealName)
+            </th>
+            <td>
+                @Model.RealName
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.RankId)
+            </th>
+            <td>
+                @Model.RankId
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.IsPower)
+            </th>
+            <td>
+                @Model.IsPower
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.IsActive)
+            </th>
+            <td>
+                @Model.IsActive
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.RegionId)
+            </th>
+            <td>
+                @Model.RegionId
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Mobil)
+            </th>
+            <td>
+                @Model.Mobil
+            </td>
+		</tr>
+    </table>
+</fieldset>
+

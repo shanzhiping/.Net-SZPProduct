@@ -1,0 +1,190 @@
+﻿@model PagedList<Models.Orders>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+
+    @{Html.RenderPartial("Button_Search");}
+
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+        <thead>
+            <tr>
+				<th>
+					订单流水号
+				</th>
+
+				<th>
+					顾客编号
+				</th>
+
+				<th>
+					顾客姓名
+				</th>
+
+				<th>
+					创建时间
+				</th>
+
+				<th>
+					运送地区
+				</th>
+
+				<th>
+					运送地址
+				</th>
+
+				<th>
+					邮编
+				</th>
+
+				<th>
+					收货人手机
+				</th>
+
+				<th>
+					收货人固定电话
+				</th>
+
+				<th>
+					支付方式
+				</th>
+
+				<th>
+					支付网关
+				</th>
+
+				<th>
+					费用结清
+				</th>
+
+				<th>
+					运费
+				</th>
+
+				<th>
+					净重
+				</th>
+
+				<th>
+					商品总价
+				</th>
+
+				<th>
+					货运单号
+				</th>
+
+				<th>
+					货到付款
+				</th>
+
+				<th>
+					商品数量
+				</th>
+
+				<th>
+					是否激活
+				</th>
+
+				<th>
+					备注
+				</th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+					<td>
+						@item.Name
+					</td>
+
+					<td>
+						@item.UserId
+					</td>
+
+					<td>
+						@item.RealName
+					</td>
+
+					<td>
+						@item.CreateTime
+					</td>
+
+					<td>
+						@item.ShippingRegion
+					</td>
+
+					<td>
+						@item.Address
+					</td>
+
+					<td>
+						@item.PostCode
+					</td>
+
+					<td>
+						@item.Mobil
+					</td>
+
+					<td>
+						@item.Tel
+					</td>
+
+					<td>
+						@item.PaymentModeId
+					</td>
+
+					<td>
+						@item.PaymentGateway
+					</td>
+
+					<td>
+						@item.IsPaid
+					</td>
+
+					<td>
+						@item.Freight
+					</td>
+
+					<td>
+						@item.Weight
+					</td>
+
+					<td>
+						@item.CostPrice
+					</td>
+
+					<td>
+						@item.ShipOrderNumber
+					</td>
+
+					<td>
+						@item.IsPOD
+					</td>
+
+					<td>
+						@item.Total
+					</td>
+
+					<td>
+						@item.IsActive
+					</td>
+
+					<td>
+						@item.Remark
+					</td>
+                    <td class="center operation">
+                        @{Html.RenderPartial("Link_Operations",item);}
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+	@Html.Raw(Ajax.MikePager(Model))

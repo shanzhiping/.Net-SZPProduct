@@ -1,0 +1,72 @@
+﻿@model IQueryable<Models.Articles>
+@{ Layout = null;}
+<table id="footer_content">
+    <thead>
+        <tr>
+            <th>
+                购物指南
+            </th>
+            <th class="b">
+                配送方式
+            </th>
+            <th class="c">
+                支付方式
+            </th>
+            <th class="d">
+                售后服务
+            </th>
+            <th class="e">
+                特色服务
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <ul>
+                    @foreach (var item1 in Model.Where(a => a.Genres.Name.Equals("购物指南")) as IQueryable<Models.Articles>)
+                    {
+                        <li>&loz;&nbsp;@Html.ActionLink(item1.Name.CutString(15), "Details", "Articles", new { id=item1.Id},null)</li>
+                    }
+                </ul>
+            </td>
+            <td>
+                <ul>
+                     @foreach (var item2 in Model.Where(a => a.Genres.Name.Equals("配送方式")) as IQueryable<Models.Articles>)
+                     {
+                        <li>&loz;&nbsp;@Html.ActionLink(item2.Name.CutString(15), "Details", "Articles", new { id = item2.Id }, null)</li>
+                     }
+                </ul>
+            </td>
+            <td>
+                <ul>
+                     @foreach (var item3 in Model.Where(a => a.Genres.Name.Equals("支付方式")) as IQueryable<Models.Articles>)
+                    {
+                        <li>&loz;&nbsp;@Html.ActionLink(item3.Name.CutString(15), "Details", "Articles", new { id = item3.Id }, null)</li>
+                    }
+                </ul>
+            </td>
+            <td>
+                <ul>
+                     @foreach (var item4 in Model.Where(a => a.Genres.Name.Equals("售后服务")) as IQueryable<Models.Articles>)
+                    {
+                        <li>&loz;&nbsp;@Html.ActionLink(item4.Name.CutString(15), "Details", "Articles", new { id = item4.Id }, null)</li>
+                    }
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    @foreach (var item5 in Model.Where(a => a.Genres.Name.Equals("特色服务")) as IQueryable<Models.Articles>)
+                    {
+                        <li>&loz;&nbsp;@Html.ActionLink(item5.Name.CutString(15), "Details", "Articles", new { id = item5.Id }, null)</li>
+                    }
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="bottom">
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>

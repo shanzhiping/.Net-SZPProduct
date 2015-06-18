@@ -1,0 +1,78 @@
+﻿@model PagedList<Models.ShoppingCart>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+
+    @{Html.RenderPartial("Button_Search");}
+
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+        <thead>
+            <tr>
+				<th>
+					简述
+				</th>
+
+				<th>
+					商品
+				</th>
+
+				<th>
+					数量
+				</th>
+
+				<th>
+					创建时间
+				</th>
+
+				<th>
+					顾客
+				</th>
+
+				<th>
+					备注
+				</th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+					<td>
+						@item.Name
+					</td>
+
+					<td>
+						@item.ProductId
+					</td>
+
+					<td>
+						@item.Quantity
+					</td>
+
+					<td>
+						@item.CreateTime
+					</td>
+
+					<td>
+						@item.UserId
+					</td>
+
+					<td>
+						@item.Remark
+					</td>
+                    <td class="center operation">
+                        @{Html.RenderPartial("Link_Operations",item);}
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+	@Html.Raw(Ajax.MikePager(Model))

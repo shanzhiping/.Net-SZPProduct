@@ -1,0 +1,19 @@
+﻿@model IQueryable<Models.Products>
+@{Layout = null;}
+<ul>
+    @{int i = 1;}
+    @foreach (var item in Model as IQueryable<Models.Products>)
+    { 
+        <li>
+            <p class="full"> 
+                <a href="@Url.Action("Details", new { Id = item.Id })" target="_blank" class="item">
+                    <img src="@(new BLL.GalleryBLL().GetFirstPicture(item.Id))" alt="" /><b>@i</b></a> @Html.ActionLink(item.Name, "Details", new { Id = item.Id }, new { @target = "_blank" })
+                <span><b class="price">@String.Format("{0:C}", item.SalePrice)</b> <b class="price_old">@String.Format("{0:C}", item.MarketPrice)</b></span>
+            </p>
+            <p class="slim">
+                <b>@i</b><a href="@Url.Action("Details", new { Id = item.Id })" target="_blank">@item.Name.CutString(28)</a>
+            </p>
+        </li>
+        i++;
+    }
+</ul>

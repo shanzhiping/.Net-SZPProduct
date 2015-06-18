@@ -1,0 +1,86 @@
+﻿@model PagedList<Models.ShippingAddress>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+
+    @{Html.RenderPartial("Button_Search");}
+
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+        <thead>
+            <tr>
+				<th>
+					收货人姓名
+				</th>
+
+				<th>
+					收货人手机
+				</th>
+
+				<th>
+					收货人电话
+				</th>
+
+				<th>
+					详细地址
+				</th>
+
+				<th>
+					邮编
+				</th>
+
+				<th>
+					用户
+				</th>
+
+				<th>
+					默认
+				</th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+					<td>
+						@item.Name
+					</td>
+
+					<td>
+						@item.Mobil
+					</td>
+
+					<td>
+						@item.Tel
+					</td>
+
+					<td>
+						@item.Address
+					</td>
+
+					<td>
+						@item.PostCode
+					</td>
+
+					<td>
+						@item.UserId
+					</td>
+
+					<td>
+						@item.IsDefault
+					</td>
+                    <td class="center operation">
+                        @{Html.RenderPartial("Link_Operations",item);}
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+	@Html.Raw(Ajax.MikePager(Model))

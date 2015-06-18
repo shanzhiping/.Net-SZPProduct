@@ -1,0 +1,3 @@
+﻿@Ajax.ActionLink("[查看]", "Details", new { id = Model.Id, pageIndex = Request["pageIndex"], keyword = Request["keyword"] }, new AjaxOptions() { UpdateTargetId = "Main" })
+@Ajax.ActionLink("[编辑]", "Edit",new { id = Model.Id, pageIndex = Request["pageIndex"], keyword = Request["keyword"] }, new AjaxOptions() { UpdateTargetId = "Main", HttpMethod = "Get" })
+@Ajax.ActionLink("[删除]", "Delete", new  { id = Model.Id, pageIndex = Request["pageIndex"], keyword = Request["keyword"] }, new AjaxOptions() { UpdateTargetId = "Main", HttpMethod = "Delete", Confirm = " 您确定要删除该记录吗？该操作不可恢复！" })

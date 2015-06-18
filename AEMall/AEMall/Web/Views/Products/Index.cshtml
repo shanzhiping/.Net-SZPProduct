@@ -1,0 +1,43 @@
+﻿@model PagedList<Models.Products>
+@{
+    ViewBag.Title = "产品列表";
+    ViewBag.CssSelf = @Url.Content("~/Content/themes/shine/ui.shine.inner.css");
+    ViewBag.JsSelf = @Url.Content("~/Scripts/jquery.start.inner.js");    
+}
+<div id="location">
+    @Html.ActionLink("首页", "Index", "Index")@Html.ActionLink("产品列表", "Index", "Products", null, new { @class = "child" })
+</div>
+<div id="main">
+    <div class="inner_left">
+        <span class="left_title">◊ 相关分类 @ViewBag.SiteName</span>
+        <div class="left_content">
+            相关分类
+        </div>
+    </div>
+    <div class="list_wrapper">
+        <div class="sort_wrapper">
+            <span class="sort_title">排序</span>
+            <ul id="sort_items">
+                <li><span></span><b></b><a href="javascript:void(0);">价格</a></li>
+                <li class="cur"><span></span><b></b><a href="javascript:void(0);">上架时间</a></li>
+            </ul>
+        </div>
+        <div id="sort_list">
+            <ul>
+                @foreach (var item in Model)
+                { <li><a href="@Url.Action("Details", "Products", new { Id = item.Id })" target="_blank" class="item">
+                        <img src="@(new BLL.GalleryBLL().GetFirstPicture(item.Id))" alt="" /></a>
+                        @Html.ActionLink(item.Name, "Details", "Products", new { Id = item.Id }, null)
+                        <span><b class="price">@String.Format("{0:C}", item.SalePrice)</b> <b class="price_old">@String.Format("{0:C}", item.MarketPrice)</b></span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="area_right" style="margin-top: 10px;">
+        <span class="area_right_title">◊ 畅销榜</span>
+        @{Html.RenderAction("RankList", "Products");}
+    </div>
+    <div class="clear">
+    </div>
+</div>

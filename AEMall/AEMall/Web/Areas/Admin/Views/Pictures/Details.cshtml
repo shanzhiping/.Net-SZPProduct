@@ -1,0 +1,48 @@
+﻿@model Models.Pictures
+@{
+    ViewBag.Title = "Details";
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+<fieldset>
+    <legend>详细信息</legend>
+    <table cellpadding="5px" cellspacing="1">
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Name)
+            </th>
+            <td>
+                @Model.Name
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.ArticleId)
+            </th>
+            <td>
+                @Model.ArticleId
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.ThumbnailsUrl)
+            </th>
+            <td>
+                @Model.ThumbnailsUrl
+            </td>
+		</tr>
+
+        <tr>
+            <th>
+                @Html.LabelFor(model => model.Url)
+            </th>
+            <td>
+                @Model.Url
+            </td>
+		</tr>
+    </table>
+</fieldset>
+

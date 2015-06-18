@@ -1,0 +1,11 @@
+﻿@model DateTime
+@Html.TextBoxFor(a => a, new { @readonly = "readonly" })
+<script type="text/javascript">
+    $(function () {
+        var dateins = "#@ViewData.ModelMetadata.PropertyName";
+        $(dateins).addClass("text-box single-line");
+        $(dateins).datetimepicker();
+        var d = new Date($(dateins).val());
+        $(dateins).val(d.format("yyyy-MM-dd hh:mm:ss"));
+    });
+</script>

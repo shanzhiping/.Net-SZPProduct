@@ -1,0 +1,30 @@
+﻿@model Models.UserRanks
+@using (Ajax.BeginForm(new AjaxOptions() { UpdateTargetId = "Main" }))
+{
+    <div id="buttons">
+    @{Html.RenderPartial("Button_Back2List");}
+</div>
+    <fieldset>
+        <legend>新建/编辑</legend>       
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.Name)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.Name)
+                    @Html.ValidationMessageFor(model => model.Name)
+                 </div>
+
+			</div>
+			<div style="clear: both;">
+            	<div class="editor-label">
+                    @Html.LabelFor(model => model.Sequence)
+                </div>
+            	<div class="editor-field">
+                    @Html.EditorFor(model => model.Sequence)
+                    @Html.ValidationMessageFor(model => model.Sequence)
+                 </div>
+			</div>
+            @{Html.RenderPartial("Button_Submit");}       
+    </fieldset>
+}

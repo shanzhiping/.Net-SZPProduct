@@ -1,0 +1,60 @@
+﻿@model PagedList<Models.Users>
+@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+    @{Html.RenderPartial("Button_Search");}
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<table id="datatable">
+    <thead>
+        <tr>
+            <th>
+                用户名
+            </th>
+            <th>
+                姓名
+            </th>
+            <th>
+                角色
+            </th>
+            <th>
+                用户状态
+            </th>
+            <th>
+                手机号
+            </th>
+            <th>
+                操作
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.RealName
+                </td>
+                <td>
+                    
+                </td>
+                <td class="center">
+                    @Html.Raw(item.IsActive.Value.ToChnBool(false,"正常","锁定"))
+                </td>
+                <td>
+                    @item.Mobil
+                </td>
+                <td class="center operation">
+                    @{Html.RenderPartial("Link_Operations", item);}
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.Raw(Ajax.MikePager(Model))

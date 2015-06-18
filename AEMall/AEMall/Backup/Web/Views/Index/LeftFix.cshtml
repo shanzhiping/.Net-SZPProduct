@@ -1,0 +1,5 @@
+﻿@model Models.Articles
+@{ Layout = null;}
+<a href="." target="_blank">
+    <img src="@(new BLL.PicturesBLL().GetFirstPictureOriginal(Model.Id))" />  
+</a>

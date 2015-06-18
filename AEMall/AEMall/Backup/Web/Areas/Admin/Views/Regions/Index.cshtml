@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "列表";
+    Layout = null;
+}
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $("#datatable").treeTable({
+            indent: 11
+        });
+    });
+</script>
+<div id="buttons">
+    @{Html.RenderPartial("Button_Create");}
+    @{Html.RenderPartial("Button_Search");}
+    @{Html.RenderPartial("Box_Search");}
+</div>
+<div id="datatable_wrapper" class="dataTables_wrapper">
+    <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-tl ui-corner-tr ui-helper-clearfix">
+    </div>
+    <table id="datatable" class="category">
+        <thead>
+            <tr>
+                <th>
+                    名称
+                </th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @Html.Raw(@ViewBag.TreeList)
+        </tbody>
+    </table>
+    <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix">
+    </div>
+</div>
